@@ -5,7 +5,7 @@ const nav = ["Главная", "Портфолио", "Услуги и цены",
 
 const Header = () => {
   return (
-    <div className="sticky mx-auto flex min-h-[103px] w-full max-w-7xl items-center justify-between px-20 py-10">
+    <div className="sticky top-0 z-10 mx-auto flex w-full max-w-7xl items-center justify-between bg-white px-20 py-5">
       <Image src="./logo.svg" alt="logo" width={382} height={82} />
       <div className="flex items-center justify-between gap-8">
         {nav.map((navItem, index) => (
