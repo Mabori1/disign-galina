@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
-  basePath: "/disign-galina",
+  basePath: isProd ? "/disign-galina" : "",
+  assetsPrefix: "/disign-galina",
   output: "export",
-  distDir: "dist",
   images: {
     unoptimized: true,
   },
