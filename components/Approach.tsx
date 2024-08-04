@@ -13,7 +13,7 @@ const Approach = () => {
 
       <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1000px] items-center justify-between">
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
-          <Image src="/ap1.jpg" alt="фото дивана" width={454} height={486} />
+          <Image src="/ap1.jpg" alt="фото стола" width={454} height={486} />
         </div>
         <div className="flex size-full max-w-[454px] flex-col justify-center">
           <div className="mb-14 flex items-center justify-between">
@@ -60,13 +60,13 @@ const Approach = () => {
           </div>
         </div>
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
-          <Image src="/ap2.jpg" alt="Обо мне фото" width={454} height={486} />
+          <Image src="/ap2.jpg" alt="фото окна" width={454} height={486} />
         </div>
       </div>
 
       <div className="mx-auto mb-16 mt-28 flex w-full max-w-[1000px] items-center justify-between">
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
-          <Image src="/ap3.jpg" alt="Обо мне фото" width={454} height={486} />
+          <Image src="/ap3.jpg" alt="фото дивана" width={454} height={486} />
         </div>
         <div className="flex size-full max-w-[454px] flex-col justify-center">
           <div className="mb-14 flex items-center justify-between">
