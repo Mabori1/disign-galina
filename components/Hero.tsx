@@ -11,7 +11,6 @@ const Hero = () => {
         <Image
           src="/hero.jpg"
           alt="Hero image"
-          objectFit="cover"
           width={1920}
           height={1080}
           className="size-full"
