@@ -26,6 +26,7 @@ const config = {
       },
       colors: {
         "nightshade-blue": "#292F36",
+        Isabelline: "#F4F0EC",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

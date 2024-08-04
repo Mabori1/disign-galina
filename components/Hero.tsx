@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -24,6 +26,28 @@ const Hero = () => {
           Создание дизайна интерьера уникальный процесс, требующий глубокого
           понимания ваших потребностей, желаний и образа жизни
         </p>
+      </div>
+      <div className="mt-28 flex items-center justify-between">
+        <div className="mr-16 flex max-w-md flex-col">
+          <h2 className="mb-7 font-ledger text-6xl">Обо Мне</h2>
+          <p className="mb-11 font-jost text-2xl">
+            Меня зовут Галина, я - профессиональный дизайнер интерьера с
+            многолетним опытом, моя задача создать для вас пространство, в
+            котором хочется жить! Обращаю внимание не только на визуальную
+            концепцию, но и функциональность интерьера, учитывая все особенности
+            вашей квартиры, используя максимум пространства, не забывая о
+            индивидуальности каждого члена семьи. Для меня важно в проекте
+            использовать не только красивые, но и доступные мебель и материалы,
+            ориентируясь на ваш бюджет, попутно консультируя о плюсах и минусах
+            выбора с возможной альтернативой
+          </p>
+          <Button>
+            Заказать дизайн <ArrowRight className="ml-3" />
+          </Button>
+        </div>
+        <div className="size-full max-h-[735px]">
+          <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
+        </div>
       </div>
     </section>
   );
