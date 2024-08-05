@@ -18,7 +18,7 @@ const Hero = () => {
           className="size-full"
         />
       </div>
-      <div className="mx-auto mt-28 flex w-full max-w-3xl flex-col">
+      <div className="mx-auto my-28 flex w-full max-w-3xl flex-col">
         <h1 className="mb-3 max-w-3xl text-wrap font-ledger text-8xl">
           Дом - зеркало вашей души
         </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
-      <div className="mt-28 flex items-center justify-between">
+      <div className="mx-auto mt-28 flex items-center justify-between">
         <div className="mr-16 flex max-w-md flex-col">
           <h2 className="mb-7 font-ledger text-6xl">Обо Мне</h2>
           <p className="mb-11 font-jost text-2xl">

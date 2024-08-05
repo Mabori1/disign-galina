@@ -126,7 +126,7 @@ const MyWork = () => {
         </div>
       </div>
 
-      <div className="flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[100px] bg-nightshade-blue text-white">
+      <div className="flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-white">
         <h3 className="font-ledger text-6xl">Остались вопросы?</h3>
         <p className="font-jost text-2xl">
           Закажите обратный звонок и мы свяжемся с Вами
