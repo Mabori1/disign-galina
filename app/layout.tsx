@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 
 import localFont from "next/font/local";
@@ -43,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="ru" suppressHydrationWarning className={jostFonts.className}>
       <body className={cn("relative font-sans antialiased")}>
+        <GoogleAnalytics gaId="G-E9RQ686PDL" />
         <Header />
         {children}
       </body>
