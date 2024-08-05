@@ -2,6 +2,7 @@ import { CircleChevronRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const MyWork = () => {
   return (
@@ -132,9 +133,14 @@ const MyWork = () => {
           Закажите обратный звонок и мы свяжемся с Вами
         </p>
 
-        <Button className="bg-golden-beige px-10">
-          Заказать дизайн <ArrowRight className="ml-3" />
-        </Button>
+        <Link
+          href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
+          target="_blank"
+        >
+          <Button className="bg-golden-beige px-10">
+            Заказать дизайн <ArrowRight className="ml-3" />
+          </Button>
+        </Link>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -41,9 +42,12 @@ const Hero = () => {
             ориентируясь на ваш бюджет, попутно консультируя о плюсах и минусах
             выбора с возможной альтернативой
           </p>
-          <Button>
-            Заказать дизайн <ArrowRight className="ml-3" />
-          </Button>
+
+          <Link href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос">
+            <Button>
+              Заказать дизайн <ArrowRight className="ml-3" />
+            </Button>
+          </Link>
         </div>
         <div className="size-full max-h-[735px]">
           <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
