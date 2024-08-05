@@ -3,10 +3,10 @@
 const nextConfig = {
   // basePath: "/disign-galina",
   // assetPrefix: isProd ? "/disign-galina/" : undefined,
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  // output: "export",
+  // images: {
+  // unoptimized: true,
+  // },
 };
 
 export default nextConfig;
