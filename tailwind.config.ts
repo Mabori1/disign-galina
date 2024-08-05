@@ -25,6 +25,7 @@ const config = {
         ledger: ["Ledger", ...fontFamily.sans],
       },
       colors: {
+        "golden-beige": "#CDA274",
         "nightshade-blue": "#292F36",
         isabelline: "#F4F0EC",
         "typewriter-Ink": "#4D5053",

@@ -1,5 +1,6 @@
 import Approach from "@/components/Approach";
 import Hero from "@/components/Hero";
+import MyWork from "@/components/MyWork";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <div className="w-full max-w-7xl">
         <Hero />
         <Approach />
+        <MyWork />
       </div>
     </main>
   );
