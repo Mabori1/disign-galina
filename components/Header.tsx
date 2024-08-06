@@ -5,11 +5,11 @@ const nav = ["Главная", "Портфолио", "Услуги и цены",
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-10 mx-auto flex w-full max-w-7xl items-center justify-between bg-white px-20 py-1">
+    <div className="sticky top-0 z-10 mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between bg-white px-20 py-1">
       <Link href="https://t.me/makfflury" target="_blank">
         <Image src="/logo.png" alt="logo" width={382} height={82} />
       </Link>
-      <div className="flex items-center justify-between gap-8">
+      <div className="flex flex-wrap items-center justify-between gap-8">
         {nav.map((navItem, index) => (
           <Link
             key={`link=${index}`}

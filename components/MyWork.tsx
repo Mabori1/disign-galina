@@ -8,8 +8,12 @@ const MyWork = () => {
   return (
     <section className="mb-28 flex flex-col items-center pt-20">
       <div className="mx-auto flex max-w-lg flex-col items-center">
-        <h2 className="mb-5 font-ledger text-6xl">Мои работы</h2>
-        <p className="mb-11 font-jost text-2xl">Во власти качества</p>
+        <h2 className="mb-5 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+          Мои работы
+        </h2>
+        <p className="mb-11 text-center font-jost text-base md:text-xl lg:text-2xl">
+          Во власти качества
+        </p>
       </div>
 
       <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1150px] flex-wrap items-center justify-between gap-20">

@@ -55,7 +55,7 @@ export function ImageCarousel() {
 
   return (
     <div
-      className="sm-max:h-auto sm-max:w-full sm-max:px-4 relative w-full overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]"
+      className="relative w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleImageClick}
@@ -91,13 +91,13 @@ export function ImageCarousel() {
             fill="#F4F0EC"
             size={90}
             strokeWidth={0.2}
-            className="absolute left-3 top-1/2 h-16 w-16 -translate-y-1/2 cursor-pointer"
+            className="absolute left-3 top-1/2 h-10 w-10 -translate-y-1/2 cursor-pointer md:h-16 md:w-16"
           />
           <CircleChevronRight
             fill="#F4F0EC"
             size={90}
             strokeWidth={0.2}
-            className="absolute right-3 top-1/2 h-16 w-16 -translate-y-1/2 cursor-pointer"
+            className="absolute right-3 top-1/2 h-10 w-10 -translate-y-1/2 cursor-pointer md:h-16 md:w-16"
           />
         </div>
       </Carousel>
