@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ImageCarousel } from "./image-carousel";
 
 const Hero = () => {
   return (
@@ -10,14 +11,15 @@ const Hero = () => {
       id="Главная"
       className="mx-auto mb-28 flex size-full flex-col text-black"
     >
-      <div className="size-full overflow-hidden">
-        <Image
-          src="/hero.jpg"
-          alt="Hero image"
-          width={1920}
-          height={1080}
-          className="size-full"
-        />
+      <div className="relative size-full overflow-hidden">
+        <ImageCarousel />
+        {/* <Image */}
+        {/*   src="/hero.jpg" */}
+        {/*   alt="Hero image" */}
+        {/*   width={1920} */}
+        {/*   height={1080} */}
+        {/*   className="size-full" */}
+        {/* /> */}
       </div>
       <div className="mx-auto my-28 flex w-full max-w-3xl flex-col">
         <h1 className="mb-3 max-w-3xl text-wrap font-ledger text-8xl">
