@@ -55,7 +55,7 @@ export function ImageCarousel() {
 
   return (
     <div
-      className="sm-max:h-auto sm-max:w-full sm-max:px-4 relative w-full overflow-hidden rounded-bl-[200px]"
+      className="sm-max:h-auto sm-max:w-full sm-max:px-4 relative w-full overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleImageClick}

@@ -23,8 +23,8 @@ const Hero = () => {
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
-      <div className="mx-auto mt-28 flex flex-wrap items-center justify-between">
-        <div className="mr-16 flex max-w-md flex-col">
+      <div className="mx-auto mt-28 flex flex-wrap-reverse items-center justify-center">
+        <div className="mr-16 flex max-w-md flex-col md:items-center">
           <h2 className="mb-7 font-ledger text-6xl">Обо Мне</h2>
           <p className="mb-11 font-jost text-2xl">
             Меня зовут Галина, я - профессиональный дизайнер интерьера с
@@ -44,7 +44,7 @@ const Hero = () => {
             </Button>
           </Link>
         </div>
-        <div className="size-full max-w-[653px]">
+        <div className="mb-20 size-full max-w-[653px]">
           <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
         </div>
       </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <section className="mb-28 flex flex-col items-center rounded-3xl bg-isabelline pt-20">
+    <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-20">
       <div className="mx-auto flex max-w-lg flex-col items-center">
         <h2 className="mb-5 font-ledger text-6xl">Как я работаю</h2>
         <p className="mb-11 font-jost text-2xl">
@@ -11,7 +11,7 @@ const Approach = () => {
         </p>
       </div>
 
-      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1000px] items-center justify-between">
+      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1030px] flex-wrap-reverse items-center justify-center gap-12 px-4">
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
           <Image src="/ap1.jpg" alt="фото стола" width={454} height={486} />
         </div>
@@ -38,7 +38,7 @@ const Approach = () => {
         </div>
       </div>
 
-      <div className="mx-auto mb-16 mt-28 flex w-full max-w-[1000px] items-center justify-between">
+      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1030px] flex-wrap items-center justify-center gap-12 px-4">
         <div className="flex size-full max-w-[454px] flex-col justify-center">
           <div className="mb-14 flex items-center justify-between">
             <Image
@@ -64,7 +64,7 @@ const Approach = () => {
         </div>
       </div>
 
-      <div className="mx-auto mb-16 mt-28 flex w-full max-w-[1000px] items-center justify-between">
+      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1030px] flex-wrap-reverse items-center justify-center gap-12 px-4">
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
           <Image src="/ap3.jpg" alt="фото дивана" width={454} height={486} />
         </div>
@@ -85,7 +85,7 @@ const Approach = () => {
         </div>
       </div>
 
-      <div className="mx-auto mb-16 mt-28 flex w-full max-w-[1000px] items-center justify-between">
+      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1030px] flex-wrap items-center justify-center gap-12 px-4">
         <div className="flex size-full max-w-[454px] flex-col justify-center">
           <div className="mb-14 flex items-center justify-between">
             <Image

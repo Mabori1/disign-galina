@@ -106,14 +106,14 @@ const MyWork = () => {
         </div>
       </div>
 
-      <div className="mb-20 flex size-full h-[460px] max-w-[1920px] items-center justify-center bg-isabelline">
-        <div className="flex flex-col items-center border border-r-golden-beige">
+      <div className="mb-20 flex size-full min-h-[460px] max-w-[1920px] flex-wrap items-center justify-center gap-10 bg-isabelline py-10">
+        <div className="flex flex-col items-center border md:border-r-golden-beige">
           <span className="mx-20 text-8xl text-golden-beige">4+</span>
           <p className="font-jost text-2xl text-typewriter-Ink">
             Года практики
           </p>
         </div>
-        <div className="flex flex-col items-center border border-r-golden-beige">
+        <div className="flex flex-col items-center border lg:border-r-golden-beige">
           <span className="mx-20 text-8xl text-golden-beige">60+</span>
           <p className="font-jost text-2xl text-typewriter-Ink">
             Готовых проектов
@@ -127,7 +127,7 @@ const MyWork = () => {
         </div>
       </div>
 
-      <div className="flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-white">
+      <div className="flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue px-3 text-center text-white">
         <h3 className="font-ledger text-6xl">Остались вопросы?</h3>
         <p className="font-jost text-2xl">
           Закажите обратный звонок и мы свяжемся с Вами

@@ -5,7 +5,7 @@ const Footer = () => {
   const nav = ["Главная", "Портфолио", "Услуги и цены", "Контакты"];
 
   return (
-    <section className="flex justify-center gap-20 pb-10">
+    <section className="flex flex-wrap justify-center gap-20 pb-10">
       <div className="flex flex-col items-center">
         <Link href="https://t.me/makfflury" target="_blank">
           <Image src="/logo.png" alt="logo" width={382} height={82} />
