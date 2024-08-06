@@ -13,13 +13,6 @@ const Hero = () => {
     >
       <div className="relative size-full overflow-hidden">
         <ImageCarousel />
-        {/* <Image */}
-        {/*   src="/hero.jpg" */}
-        {/*   alt="Hero image" */}
-        {/*   width={1920} */}
-        {/*   height={1080} */}
-        {/*   className="size-full" */}
-        {/* /> */}
       </div>
       <div className="mx-auto my-28 flex w-full max-w-3xl flex-col">
         <h1 className="mb-3 max-w-3xl text-wrap font-ledger text-8xl">
@@ -30,7 +23,7 @@ const Hero = () => {
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
-      <div className="mx-auto mt-28 flex items-center justify-between">
+      <div className="mx-auto mt-28 flex flex-wrap items-center justify-between">
         <div className="mr-16 flex max-w-md flex-col">
           <h2 className="mb-7 font-ledger text-6xl">Обо Мне</h2>
           <p className="mb-11 font-jost text-2xl">
@@ -46,12 +39,12 @@ const Hero = () => {
           </p>
 
           <Link href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос">
-            <Button>
+            <Button className="my-5">
               Заказать дизайн <ArrowRight className="ml-3" />
             </Button>
           </Link>
         </div>
-        <div className="size-full max-h-[735px]">
+        <div className="size-full max-w-[653px]">
           <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
         </div>
       </div>
