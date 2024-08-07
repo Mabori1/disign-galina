@@ -1,9 +1,9 @@
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { ImageCarousel } from "./image-carousel";
 import { myWork } from "@/data";
 import { cn } from "@/lib/utils";
+import { ImageCarousel } from "./ImageCarousel";
 
 const MyWork = () => {
   return (

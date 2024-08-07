@@ -3,8 +3,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { ImageCarousel } from "./image-carousel";
 import { heroPhotos } from "@/data";
+import { ImageCarousel } from "./ImageCarousel";
 
 const Hero = () => {
   return (
