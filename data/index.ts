@@ -1,4 +1,4 @@
-import { Square } from "lucide-react";
+export const nav = ["Главная", "Портфолио", "Услуги и цены", "Контакты"];
 
 export const heroPhotos = [
   "/hero1.jpg",
