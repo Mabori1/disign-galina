@@ -101,9 +101,8 @@ export function ImageCarousel(props: ImageCarouselProps) {
       </Carousel>
 
       <div
-        className={`absolute bottom-0 flex w-full flex-wrap justify-center gap-[5px] pb-2 transition-opacity duration-1000 ${
-          isHovered ? "opacity-100" : "opacity-0"
-        }`}
+        className={`absolute bottom-0 flex w-full flex-wrap justify-center gap-[5px] pb-2 opacity-100 transition-opacity duration-1000`}
+        // ${isHovered ? "opacity-100" : "opacity-0"}
       >
         {Array.from({ length: count }).map((_, index) => (
           <div

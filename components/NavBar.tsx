@@ -35,7 +35,7 @@ const NavBar = () => {
             {nav.map((navItem, index) => (
               <li
                 key={index}
-                className="border-b-2 border-b-nightshade-blue py-4 text-center font-jost text-base text-nightshade-blue hover:text-neutral-500 md:border-b-0 md:px-2 md:text-xl lg:px-6"
+                className="border-b-2 border-b-nightshade-blue py-6 text-center font-jost text-3xl text-nightshade-blue hover:text-neutral-500 md:border-b-0 md:px-2 md:text-xl lg:px-6 lg:text-2xl"
               >
                 <Link href={`#${navItem}`} onClick={() => setNavBar(!navBar)}>
                   {navItem}

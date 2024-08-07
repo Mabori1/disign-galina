@@ -12,18 +12,17 @@ const MyWork = () => {
         <h2 className="mb-5 text-center font-ledger text-4xl lg:text-6xl">
           Мои работы
         </h2>
-        <p className="mb-11 text-center font-jost text-xl lg:text-2xl">
+        <p className="mb-11 text-center font-jost text-3xl">
           Во власти качества
         </p>
       </div>
 
-      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1150px] flex-wrap items-center justify-between gap-20">
+      <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1150px] flex-wrap items-center justify-center gap-20">
         {myWork.map((item, index) => (
           <div key={index} className="flex flex-col justify-center">
             <div
               className={cn(
-                "mb-6 w-full max-w-[525px] overflow-hidden",
-                index % 2 === 0 ? "rounded-tr-[100px]" : "rounded-tl-[100px]",
+                "mb-6 w-full overflow-hidden rounded-bl-[100px] xl:max-w-[525px]",
               )}
             >
               <ImageCarousel data={item.images} width={548} height={525} />
