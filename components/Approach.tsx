@@ -5,10 +5,10 @@ const Approach = () => {
   return (
     <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-20">
       <div className="mx-auto flex max-w-lg flex-col items-center">
-        <h2 className="mb-5 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+        <h2 className="mb-5 text-center font-ledger text-4xl lg:text-6xl">
           Как я работаю
         </h2>
-        <p className="mb-11 text-center font-jost text-base md:text-xl lg:text-2xl">
+        <p className="mb-11 text-center font-jost text-xl lg:text-2xl">
           Для тех, кто ценит время и деньги
         </p>
       </div>
@@ -28,10 +28,10 @@ const Approach = () => {
             <span className="font-jost text-8xl">01</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+            <h3 className="mb-7 text-center font-ledger text-3xl md:text-4xl lg:text-6xl">
               Подготовка
             </h3>
-            <p className="mb-11 font-jost text-base text-typewriter-Ink md:text-xl lg:text-2xl">
+            <p className="mb-11 font-jost text-xl text-typewriter-Ink lg:text-2xl">
               Выезд на объект для замера и фотофиксации всех помещений
               коммуникаций, подписание договора, сбор подробного технического
               задания
@@ -52,10 +52,10 @@ const Approach = () => {
             <span className="font-jost text-8xl">02</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+            <h3 className="mb-7 text-center font-ledger text-3xl lg:text-6xl">
               Планировочное решение
             </h3>
-            <p className="mb-11 font-jost text-base text-typewriter-Ink md:text-xl lg:text-2xl">
+            <p className="mb-11 font-jost text-xl text-typewriter-Ink lg:text-2xl">
               Изготовление пакета чертежей, таких как: обмерный план,
               расстановки мебели в нескольких вариантах
             </p>
@@ -76,10 +76,10 @@ const Approach = () => {
             <span className="font-jost text-8xl">03</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+            <h3 className="mb-7 text-center font-ledger text-3xl lg:text-6xl">
               Концепция и 3D-Визуализация
             </h3>
-            <p className="mb-11 font-jost text-base text-typewriter-Ink md:text-xl lg:text-2xl">
+            <p className="mb-11 font-jost text-xl text-typewriter-Ink lg:text-2xl">
               Разработка концепции и визуального стиля, отрисовка
               фотореалистичных 3D-Визуализаций
             </p>
@@ -99,10 +99,10 @@ const Approach = () => {
             <span className="font-jost text-8xl">04</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+            <h3 className="mb-7 text-center font-ledger text-3xl lg:text-6xl">
               Компоновка проекта
             </h3>
-            <p className="mb-11 font-jost text-base text-typewriter-Ink md:text-xl lg:text-2xl">
+            <p className="mb-11 font-jost text-xl text-typewriter-Ink lg:text-2xl">
               Создание дополнительных комплкетов чертежей для строителей, таких
               как: план пола, потолка, плинтусов, розеток и тд.
             </p>

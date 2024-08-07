@@ -1,113 +1,44 @@
-import { CircleChevronRight } from "lucide-react";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ImageCarousel } from "./image-carousel";
+import { myWork } from "@/data";
+import { cn } from "@/lib/utils";
 
 const MyWork = () => {
   return (
     <section className="mb-28 flex flex-col items-center pt-20">
       <div className="mx-auto flex max-w-lg flex-col items-center">
-        <h2 className="mb-5 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+        <h2 className="mb-5 text-center font-ledger text-4xl lg:text-6xl">
           Мои работы
         </h2>
-        <p className="mb-11 text-center font-jost text-base md:text-xl lg:text-2xl">
+        <p className="mb-11 text-center font-jost text-xl lg:text-2xl">
           Во власти качества
         </p>
       </div>
 
       <div className="mx-auto mb-16 mt-10 flex w-full max-w-[1150px] flex-wrap items-center justify-between gap-20">
-        <div className="flex flex-col justify-center">
-          <div className="mb-6 w-full max-w-[525px] overflow-hidden rounded-tr-[100px]">
-            <Image src="/w1.jpg" alt="фото ванна" height={525} width={548} />
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <h3 className="font-ledger text-2xl">Санкт-Петербург</h3>
+        {myWork.map((item, index) => (
+          <div key={index} className="flex flex-col justify-center">
+            <div
+              className={cn(
+                "mb-6 w-full max-w-[525px] overflow-hidden",
+                index % 2 === 0 ? "rounded-tr-[100px]" : "rounded-tl-[100px]",
+              )}
+            >
+              <ImageCarousel data={item.images} width={548} height={525} />
+            </div>
+            <div className="flex items-baseline justify-center gap-2">
+              <h3 className="font-ledger text-2xl">{item.title},</h3>
               <span className="font-jost text-xl">
-                72 м
+                {`${item.square} м`}
                 <sup>
                   <small>2</small>
                 </sup>
               </span>
             </div>
-            <CircleChevronRight
-              fill="#F4F0EC"
-              size={60}
-              strokeWidth={0.2}
-              className="transition-color duration-300 hover:fill-gray-300"
-            />
           </div>
-        </div>
-
-        <div className="flex flex-col justify-center">
-          <div className="mb-6 w-full max-w-[525px] overflow-hidden rounded-tl-[100px]">
-            <Image src="/w2.jpg" alt="фото ванна" height={525} width={548} />
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <h3 className="font-ledger text-2xl">США</h3>
-              <span className="font-jost text-xl">
-                126 м
-                <sup>
-                  <small>2</small>
-                </sup>
-              </span>
-            </div>
-            <CircleChevronRight
-              fill="#F4F0EC"
-              size={60}
-              strokeWidth={0.2}
-              className="transition-color duration-300 hover:fill-gray-300"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-center">
-          <div className="mb-6 w-full max-w-[525px] overflow-hidden rounded-br-[100px]">
-            <Image src="/w3.jpg" alt="фото ванна" height={525} width={548} />
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <h3 className="font-ledger text-2xl">Екатеринбург</h3>
-              <span className="font-jost text-xl">
-                56 м
-                <sup>
-                  <small>2</small>
-                </sup>
-              </span>
-            </div>
-            <CircleChevronRight
-              fill="#F4F0EC"
-              size={60}
-              strokeWidth={0.2}
-              className="transition-color duration-300 hover:fill-gray-300"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-center">
-          <div className="mb-6 w-full max-w-[525px] overflow-hidden rounded-bl-[100px]">
-            <Image src="/w4.jpg" alt="фото ванна" height={525} width={548} />
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col">
-              <h3 className="font-ledger text-2xl">Москва</h3>
-              <span className="font-jost text-xl">
-                32 м
-                <sup>
-                  <small>2</small>
-                </sup>
-              </span>
-            </div>
-            <CircleChevronRight
-              fill="#F4F0EC"
-              size={60}
-              strokeWidth={0.2}
-              className="transition-color duration-300 hover:fill-gray-300"
-            />
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="mb-20 flex size-full min-h-[460px] max-w-[1920px] flex-wrap items-center justify-center gap-10 bg-isabelline py-10">

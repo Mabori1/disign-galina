@@ -9,20 +9,18 @@ import {
 import { useEffect, useState } from "react";
 import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 
-export function ImageCarousel() {
+type ImageCarouselProps = {
+  data: string[];
+  width: number;
+  height: number;
+};
+
+export function ImageCarousel(props: ImageCarouselProps) {
+  const { data, width, height } = props;
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-
-  const photos = [
-    "/hero1.jpg",
-    "/hero2.jpg",
-    "/hero3.jpg",
-    "/hero4.jpg",
-    "/hero5.jpg",
-    "/hero6.jpg",
-  ];
 
   useEffect(() => {
     if (!api) {
@@ -69,12 +67,12 @@ export function ImageCarousel() {
         className="sm-max:max-w-full w-full"
       >
         <CarouselContent>
-          {photos.map((item, index) => (
+          {data.map((item, index) => (
             <CarouselItem key={index}>
               <Image
                 src={item}
-                width={1920}
-                height={1080}
+                width={width}
+                height={height}
                 priority
                 alt="фото объекта недвижимости"
                 className="sm-max:object-contain h-full w-full object-cover"

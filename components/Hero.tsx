@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { ImageCarousel } from "./image-carousel";
+import { heroPhotos } from "@/data";
 
 const Hero = () => {
   return (
@@ -12,23 +13,23 @@ const Hero = () => {
       className="mx-auto mb-28 mt-10 flex size-full flex-col text-black"
     >
       <div className="relative size-full overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]">
-        <ImageCarousel />
+        <ImageCarousel data={heroPhotos} width={1920} height={1080} />
       </div>
       <div className="mx-auto my-14 flex w-full max-w-3xl flex-col items-center md:my-20 lg:my-28">
-        <h1 className="mb-3 max-w-3xl text-wrap text-center font-ledger text-3xl md:text-6xl lg:text-8xl">
+        <h1 className="mb-3 max-w-3xl text-wrap text-center font-ledger text-4xl md:text-6xl lg:text-8xl">
           Дом - зеркало вашей души
         </h1>
-        <p className="text-center font-jost text-base lg:text-2xl">
+        <p className="text-center font-jost text-xl lg:text-2xl">
           Создание дизайна интерьера уникальный процесс, требующий глубокого
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
       <div className="mx-auto my-8 flex flex-wrap-reverse items-center justify-center lg:my-28">
         <div className="mr-16 flex max-w-md flex-col items-center">
-          <h2 className="mb-7 text-center font-ledger text-2xl md:text-4xl lg:text-6xl">
+          <h2 className="mb-7 text-center font-ledger text-4xl lg:text-6xl">
             Обо Мне
           </h2>
-          <p className="mb-11 text-center font-jost text-base md:text-xl lg:text-2xl">
+          <p className="mb-11 text-center font-jost text-xl lg:text-2xl">
             Меня зовут Галина, я - профессиональный дизайнер интерьера с
             многолетним опытом, моя задача создать для вас пространство, в
             котором хочется жить! Обращаю внимание не только на визуальную
@@ -42,7 +43,7 @@ const Hero = () => {
 
           <Link href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос">
             <Button className="my-5">
-              Заказать дизайн <ArrowRight className="ml-3" />
+              Заказать <ArrowRight className="ml-3" />
             </Button>
           </Link>
         </div>
