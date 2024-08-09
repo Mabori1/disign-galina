@@ -7,8 +7,8 @@ import { ArrowRight } from "lucide-react";
 const Footer = () => {
   return (
     <section className="flex flex-col items-center bg-white py-20">
-      <div className="mb-10 flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue px-3 text-center text-white">
-        <h3 className="font-ledger text-6xl">Остались вопросы?</h3>
+      <div className="mx-3 mb-10 flex size-full h-[374px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:max-w-[60%]">
+        <h3 className="font-ledger text-4xl md:text-6xl">Остались вопросы?</h3>
         <p className="font-jost text-2xl">
           Закажите обратный звонок и мы свяжемся с Вами
         </p>

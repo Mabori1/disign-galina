@@ -10,7 +10,7 @@ const Hero = () => {
       id="Главная"
       className="mx-auto mb-28 mt-10 flex size-full flex-col text-black"
     >
-      <div className="relative left-1/2 top-[60px] mx-auto size-full w-[100vw] translate-x-[-50%] overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]">
+      <div className="relative left-1/2 top-[60px] mx-auto h-auto w-[100vw] translate-x-[-50%] overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]">
         <Image
           src="/hero.jpg"
           alt="Главное фото сайта"
@@ -19,7 +19,7 @@ const Hero = () => {
         />
       </div>
       <div className="my-32 flex w-full max-w-3xl flex-col">
-        <h1 className="mb-3 max-w-3xl text-wrap font-ledger text-8xl">
+        <h1 className="mb-5 max-w-3xl text-wrap font-ledger text-7xl md:text-8xl">
           Дом - зеркало <br /> вашей души
         </h1>
         <p className="font-jost text-2xl">
@@ -27,9 +27,9 @@ const Hero = () => {
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
-      <div className="mx-auto flex flex-wrap-reverse items-center justify-center">
+      <div className="mx-auto my-10 flex flex-wrap-reverse items-center justify-center">
         <div className="mr-16 flex max-w-md flex-col">
-          <h2 className="mb-7 font-ledger text-5xl lg:text-6xl">Обо Мне</h2>
+          <h2 className="my-7 font-ledger text-5xl lg:text-6xl">Обо Мне</h2>
           <p className="mb-11 font-jost text-2xl md:text-3xl lg:text-2xl">
             Меня зовут Галина, я - профессиональный дизайнер интерьера с
             многолетним опытом, моя задача создать для вас пространство, в
@@ -48,7 +48,7 @@ const Hero = () => {
             </Button>
           </Link>
         </div>
-        <div className="size-full max-w-[653px]">
+        <div className="my-5 size-full max-w-[653px]">
           <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
         </div>
       </div>

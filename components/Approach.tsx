@@ -48,7 +48,9 @@ const Approach = () => {
             <span className="font-jost text-8xl">02</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 font-ledger text-5xl">Планировочное решение</h3>
+            <h3 className="mb-7 font-ledger text-4xl sm:text-5xl">
+              Планировочное решение
+            </h3>
             <p className="mb-11 font-jost text-2xl text-typewriter-Ink">
               Изготовление пакета чертежей, таких как: обмерный план,
               расстановки мебели в нескольких вариантах
@@ -70,7 +72,7 @@ const Approach = () => {
             <span className="font-jost text-8xl">03</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 font-ledger text-5xl">
+            <h3 className="mb-7 font-ledger text-4xl sm:text-5xl">
               Концепция и <br />
               3D-Визуализация
             </h3>

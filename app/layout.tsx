@@ -47,7 +47,7 @@ export default function RootLayout({
       <body className={cn("relative flex flex-col font-sans antialiased")}>
         <GoogleAnalytics gaId="G-E9RQ686PDL" />
         <Header />
-        <main className="relative mx-auto flex h-full max-w-7xl flex-1 flex-col bg-white px-5 sm:px-10">
+        <main className="mx-auto flex size-full max-w-7xl flex-1 flex-col bg-white px-5 sm:px-10">
           {children}
         </main>
         <Footer />
