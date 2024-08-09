@@ -1,18 +1,14 @@
 import Approach from "@/components/Approach";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MyWork from "@/components/MyWork";
 
 const Home = () => {
   return (
-    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-white px-5 sm:px-10">
-      <div className="w-full max-w-7xl">
-        <Hero />
-        <Approach />
-        <MyWork />
-        <Footer />
-      </div>
-    </main>
+    <>
+      <Hero />
+      <Approach />
+      <MyWork />
+    </>
   );
 };
 

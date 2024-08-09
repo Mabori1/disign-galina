@@ -3,12 +3,10 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-20">
+    <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-28">
       <div className="mx-auto flex flex-col items-center">
-        <h2 className="mb-5 text-center font-ledger text-5xl lg:text-7xl">
-          Как я работаю
-        </h2>
-        <p className="mb-11 text-center font-jost text-3xl lg:text-4xl">
+        <h2 className="mb-5 text-center font-ledger text-7xl">Как я работаю</h2>
+        <p className="mb-11 text-center font-jost text-2xl">
           Для тех, кто ценит время и деньги
         </p>
       </div>
@@ -28,10 +26,8 @@ const Approach = () => {
             <span className="font-jost text-8xl">01</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-4xl">
-              Подготовка
-            </h3>
-            <p className="mb-11 font-jost text-3xl text-typewriter-Ink">
+            <h3 className="mb-7 font-ledger text-5xl">Подготовка</h3>
+            <p className="mb-11 font-jost text-2xl text-typewriter-Ink">
               Выезд на объект для замера и фотофиксации всех помещений
               коммуникаций, подписание договора, сбор подробного технического
               задания
@@ -52,10 +48,8 @@ const Approach = () => {
             <span className="font-jost text-8xl">02</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-4xl">
-              Планировочное решение
-            </h3>
-            <p className="mb-11 font-jost text-3xl text-typewriter-Ink">
+            <h3 className="mb-7 font-ledger text-5xl">Планировочное решение</h3>
+            <p className="mb-11 font-jost text-2xl text-typewriter-Ink">
               Изготовление пакета чертежей, таких как: обмерный план,
               расстановки мебели в нескольких вариантах
             </p>
@@ -76,10 +70,11 @@ const Approach = () => {
             <span className="font-jost text-8xl">03</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-4xl">
-              Концепция и 3D-Визуализация
+            <h3 className="mb-7 font-ledger text-5xl">
+              Концепция и <br />
+              3D-Визуализация
             </h3>
-            <p className="mb-11 font-jost text-3xl text-typewriter-Ink">
+            <p className="mb-11 font-jost text-2xl text-typewriter-Ink">
               Разработка концепции и визуального стиля, отрисовка
               фотореалистичных 3D-Визуализаций
             </p>
@@ -99,10 +94,8 @@ const Approach = () => {
             <span className="font-jost text-8xl">04</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
-            <h3 className="mb-7 text-center font-ledger text-4xl">
-              Компоновка проекта
-            </h3>
-            <p className="mb-11 font-jost text-3xl text-typewriter-Ink">
+            <h3 className="mb-7 font-ledger text-5xl">Компоновка проекта</h3>
+            <p className="mb-11 font-jost text-2xl text-typewriter-Ink">
               Создание дополнительных комплкетов чертежей для строителей, таких
               как: план пола, потолка, плинтусов, розеток и тд.
             </p>

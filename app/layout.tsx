@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
 
 const jostFonts = localFont({
   src: [
@@ -43,10 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" suppressHydrationWarning className={jostFonts.className}>
-      <body className={cn("relative font-sans antialiased")}>
+      <body className={cn("relative flex flex-col font-sans antialiased")}>
         <GoogleAnalytics gaId="G-E9RQ686PDL" />
         <Header />
-        {children}
+        <main className="relative mx-auto flex h-full max-w-7xl flex-1 flex-col bg-white px-5 sm:px-10">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

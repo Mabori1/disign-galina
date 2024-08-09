@@ -1,86 +1,105 @@
+import { navHeader } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
-  const nav = ["Главная", "Портфолио", "Услуги и цены", "Контакты"];
-
   return (
-    <section className="flex flex-wrap justify-center gap-20 pb-10">
-      <div className="flex flex-col items-center">
-        <Link href="https://t.me/makfflury" target="_blank">
-          <Image src="/logo.png" alt="logo" width={382} height={82} />
+    <section className="flex flex-col items-center bg-white py-20">
+      <div className="mb-10 flex size-full h-[374px] max-w-[1020px] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue px-3 text-center text-white">
+        <h3 className="font-ledger text-6xl">Остались вопросы?</h3>
+        <p className="font-jost text-2xl">
+          Закажите обратный звонок и мы свяжемся с Вами
+        </p>
+
+        <Link
+          href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
+          target="_blank"
+        >
+          <Button className="bg-golden-beige px-10">
+            Заказать дизайн <ArrowRight className="ml-3" />
+          </Button>
         </Link>
-        <p className="mb-5">Социальные сети</p>
-        <div className="flex size-full items-center justify-center gap-4">
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-20">
+        <div className="flex flex-col items-center">
           <Link href="https://t.me/makfflury" target="_blank">
-            <Image
-              src="/telegram.png"
-              alt="иконка телеграмма"
-              width={32}
-              height={32}
-            />
+            <Image src="/logo.png" alt="logo" width={382} height={82} />
           </Link>
+          <p className="mb-5">Социальные сети</p>
+          <div className="flex size-full items-center justify-center gap-4">
+            <Link href="https://t.me/makfflury" target="_blank">
+              <Image
+                src="/telegram.png"
+                alt="иконка телеграмма"
+                width={32}
+                height={32}
+              />
+            </Link>
+            <Link
+              href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
+              target="_blank"
+            >
+              <Image
+                src="/whatsapp.png"
+                alt="иконка whatsapp"
+                width={32}
+                height={32}
+              />
+            </Link>
+            <Link href="/">
+              <Image
+                src="/discord.png"
+                alt="иконка discord"
+                width={32}
+                height={32}
+              />
+            </Link>
+            <Link href="/">
+              <Image
+                src="/instagram.png"
+                alt="иконка instagram"
+                width={32}
+                height={32}
+              />
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-5 flex flex-col gap-1">
+          <p className="mb-2 text-xl font-bold">Страницы</p>
+          {navHeader.map((navItem, index) => (
+            <Link
+              key={`link=${index}`}
+              href={`${navItem.link}`}
+              className="space-x-1 font-jost text-xl text-nightshade-blue hover:text-neutral-500"
+            >
+              <span className="cursor-pointer">{navItem.label}</span>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-5 flex flex-col gap-1 font-jost text-xl text-nightshade-blue">
+          <p className="mb-2 text-xl font-bold">Контакты</p>
+
+          <span>г. Краснодар, проезд Дальний 11к1</span>
+
           <Link
-            href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
-            target="_blank"
+            href={`mailto:ph.makflya@mail.ru&body=привет?subject=вопрос`}
+            className="cursor-pointer hover:text-neutral-500"
           >
-            <Image
-              src="/whatsapp.png"
-              alt="иконка whatsapp"
-              width={32}
-              height={32}
-            />
+            <span>ph.makflya@mail.ru</span>
           </Link>
-          <Link href="/">
-            <Image
-              src="/discord.png"
-              alt="иконка discord"
-              width={32}
-              height={32}
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/instagram.png"
-              alt="иконка instagram"
-              width={32}
-              height={32}
-            />
+
+          <Link
+            href={`tel:+79937692654`}
+            className="cursor-pointer hover:text-neutral-500"
+          >
+            <span>+7(993)769-26-54</span>
           </Link>
         </div>
-      </div>
-
-      <div className="mt-5 flex flex-col gap-1">
-        <p className="mb-2 text-xl font-bold">Страницы</p>
-        {nav.map((navItem, index) => (
-          <Link
-            key={`link=${index}`}
-            href={`#${navItem}`}
-            className="space-x-1 font-jost text-xl text-nightshade-blue hover:text-neutral-500"
-          >
-            <span className="cursor-pointer">{navItem}</span>
-          </Link>
-        ))}
-      </div>
-
-      <div className="mt-5 flex flex-col gap-1 font-jost text-xl text-nightshade-blue">
-        <p className="mb-2 text-xl font-bold">Контакты</p>
-
-        <span>г. Краснодар, проезд Дальний 11к1</span>
-
-        <Link
-          href={`mailto:ph.makflya@mail.ru&body=привет?subject=вопрос`}
-          className="cursor-pointer hover:text-neutral-500"
-        >
-          <span>ph.makflya@mail.ru</span>
-        </Link>
-
-        <Link
-          href={`tel:+79937692654`}
-          className="cursor-pointer hover:text-neutral-500"
-        >
-          <span>+7(993)769-26-54</span>
-        </Link>
       </div>
     </section>
   );

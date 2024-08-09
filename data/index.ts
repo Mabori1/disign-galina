@@ -1,4 +1,9 @@
-export const nav = ["Главная", "Портфолио", "Услуги и цены", "Контакты"];
+export const navHeader = [
+  { label: "Главная", link: "/" },
+  { label: "Портфолио", link: "/portfolio" },
+  { label: "Услуги и цены", link: "/price" },
+  { label: "Контакты", link: "/contact" },
+];
 
 export const heroPhotos = [
   "/hero1.jpg",
@@ -11,23 +16,27 @@ export const heroPhotos = [
 
 export const myWork = [
   {
+    id: 1,
     title: "Санкт-Петербург",
     square: 72,
-    images: ["/w1-1.jpg", "/w1-2.jpg", "/w1-3.jpg", "/w1-4.jpg"],
+    img: "/w1-1.jpg",
   },
   {
+    id: 2,
     title: "США",
     square: 126,
-    images: ["/w2-1.jpg", "/w2-2.jpg", "/w2-3.jpg", "/w2-4.jpg"],
+    img: "/w2-1.jpg",
   },
   {
+    id: 3,
     title: "Екатеринбург",
     square: 56,
-    images: ["/w3-1.jpg", "/w3-2.jpg", "/w3-3.jpg", "/w3-4.jpg"],
+    img: "/w3-1.jpg",
   },
   {
+    id: 4,
     title: "Москва",
     square: 32,
-    images: ["/w4-1.jpg", "/w4-2.jpg", "/w4-3.jpg", "/w4-4.jpg"],
+    img: "/w4-1.jpg",
   },
 ];
