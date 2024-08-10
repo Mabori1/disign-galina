@@ -25,13 +25,13 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="mt-52 flex flex-wrap justify-center gap-4 overflow-hidden text-center">
+      <div className="mt-52 flex snap-y flex-wrap justify-center gap-4 overflow-hidden text-center">
         {priceContent.map((item) => (
           <div
             key={item.id}
             id={item.id}
             className={cn(
-              "flex h-[320px] max-w-[358px] snap-center flex-col overflow-hidden rounded-2xl p-5 hover:shadow-xl",
+              "flex h-[320px] max-w-[358px] snap-center scroll-mb-20 flex-col overflow-hidden rounded-2xl p-5 hover:shadow-xl",
 
               item.id === "спецификация" ? "bg-isabelline" : "",
             )}
@@ -80,7 +80,7 @@ const Page = () => {
               <ul className="flex flex-col gap-4">
                 {item.content.map((elem, i) => (
                   <li
-                    className="font-jost text-2xl text-typewriter-Ink"
+                    className="list-inside list-disc font-jost text-2xl text-typewriter-Ink"
                     key={i}
                   >
                     <Link href={`#${priceContent[elem].id}`}>
