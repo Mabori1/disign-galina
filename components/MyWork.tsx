@@ -49,13 +49,13 @@ const MyWork = () => {
       </div>
 
       <div className="mb-20 flex size-full min-h-[460px] max-w-[1920px] flex-wrap items-center justify-center gap-10 rounded-3xl bg-isabelline py-10">
-        <div className="flex flex-col items-center border md:border-r-golden-beige">
+        <div className="flex flex-col items-center lg:border-r lg:border-r-golden-beige">
           <span className="mx-20 text-8xl text-golden-beige">4+</span>
           <p className="font-jost text-2xl text-typewriter-Ink">
             Года практики
           </p>
         </div>
-        <div className="flex flex-col items-center border lg:border-r-golden-beige">
+        <div className="flex flex-col items-center lg:border-r lg:border-r-golden-beige">
           <span className="mx-20 text-8xl text-golden-beige">60+</span>
           <p className="font-jost text-2xl text-typewriter-Ink">
             Готовых проектов
