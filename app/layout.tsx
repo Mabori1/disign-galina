@@ -59,6 +59,7 @@ export default function RootLayout({
         <main className="mx-auto flex size-full max-w-7xl flex-1 flex-col bg-white px-5 sm:px-10">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

@@ -74,6 +74,67 @@ export const priceContent = [
   },
 ];
 
+export const portfolioContent1 = [
+  {
+    id: "1",
+    img: "/portfolio1.jpg",
+    imgWidth: 585,
+    imgHeight: 853,
+    title: "Мастер-спальня",
+    text: "США, 126 ",
+  },
+  {
+    id: "3",
+    img: "/portfolio3.jpg",
+    imgWidth: 585,
+    imgHeight: 522,
+    title: "Кухня-гостиная",
+    text: "Екатеринбург, 58 ",
+  },
+  {
+    id: "5",
+    img: "/portfolio5.jpg",
+    imgWidth: 585,
+    imgHeight: 853,
+    title: "Ванна",
+    text: "Москва, 32 ",
+  },
+];
+export const portfolioContent2 = [
+  {
+    id: "2",
+    img: "/portfolio2.jpg",
+    imgWidth: 585,
+    imgHeight: 522,
+    title: "Ванна",
+    text: "США, 126 ",
+  },
+  {
+    id: "4",
+    img: "/portfolio4.jpg",
+    imgWidth: 585,
+    imgHeight: 853,
+    title: "Кухня-гостиная",
+    text: "Санкт-Петербург, 72 ",
+  },
+  {
+    id: "6",
+    img: "/portfolio6.jpg",
+    imgWidth: 585,
+    imgHeight: 522,
+    title: "Кухня-гостиная",
+    text: "США, 126 ",
+  },
+  {
+    id: "7",
+    img: "/portfolio7.jpg",
+    imgWidth: 585,
+    imgHeight: 522,
+    title: "Ванна",
+    text: "Санкт-Петербург, 72 ",
+  },
+];
+
 export const priceVariants = [
   {
     id: "1",
