@@ -102,13 +102,13 @@ export function ImageCarousel(props: ImageCarouselProps) {
       </Carousel>
 
       <div
-        className={`absolute bottom-0 flex w-full flex-wrap justify-center gap-[5px] pb-2 opacity-100 transition-opacity duration-1000`}
+        className={`absolute bottom-0 flex w-full flex-wrap justify-center gap-[6px] pb-2 opacity-100 transition-opacity duration-1000`}
         // ${isHovered ? "opacity-100" : "opacity-0"}
       >
         {Array.from({ length: count }).map((_, index) => (
           <div
             key={index}
-            className={`h-1 w-7 rounded-full transition-colors duration-300 ${
+            className={`h-2 w-9 rounded-full transition-colors duration-300 ${
               current - 1 === index ? "bg-sky-50" : "bg-white/60"
             }`}
           ></div>

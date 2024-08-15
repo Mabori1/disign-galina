@@ -1,13 +1,5 @@
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import {
-  portfolioContent1,
-  portfolioContent2,
-  priceContent,
-  priceVariants,
-} from "@/data";
+import { portfolioContent1, portfolioContent2 } from "@/data";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
