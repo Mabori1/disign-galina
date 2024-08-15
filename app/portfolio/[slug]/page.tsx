@@ -9,27 +9,32 @@ const Page = ({ params }: { params: { slug: string } }) => {
   const portfolio = portfolioSlug.find((item) => item.id === params.slug);
   if (!portfolio) return null;
   return (
-    <section>
-      <div className="relative mx-auto flex h-full w-full flex-col">
-        <div className="min-h-96 w-[100vw] pt-28">
-          <Image
-            src="/portfolio-slug-hero.jpg"
-            alt="фото интерьера"
-            width={1920}
-            height={384}
-          />
-        </div>
-        <div className="mt-28 flex flex-wrap">
+    <section className="size-full">
+      <div className="absolute left-0 top-5 mt-28 h-96 w-[100vw] bg-[url('/portfolio-slug-hero.jpg')] bg-scroll bg-no-repeat">
+        {/* <Image */}
+        {/*   src="/portfolio-slug-hero.jpg" */}
+        {/*   alt="фото интерьера" */}
+        {/*   width={1920} */}
+        {/*   height={384} */}
+        {/*   className="w-full object-center" */}
+        {/* /> */}
+      </div>
+      <div className="mx-auto mt-[450px] flex flex-col justify-center">
+        <div className="mt-28 flex flex-wrap-reverse">
           <div className="mr-auto flex">
-            <Button variant="outline" onClick={() => window.history.back()}>
+            <Button
+              variant="outline"
+              onClick={() => window.history.back()}
+              className="my-10 bg-transparent md:my-0"
+            >
               <ArrowLeft className="mr-3" width={25} height={23} />
-              <span className="cursor-pointer font-jost text-2xl font-bold">
+              <span className="cursor-pointer font-jost text-2xl font-medium">
                 Назад
               </span>
             </Button>
           </div>
           <div className="mx-auto flex max-w-[658px] flex-col">
-            <h2 className="font-ledger text-4xl">
+            <h2 className="font-ledger text-2xl md:text-3xl lg:text-4xl">
               {portfolio.title}
               <span>
                 м
