@@ -23,7 +23,7 @@ const Approach = () => {
               width="92"
               height="92"
             />
-            <span className="font-jost text-8xl">01</span>
+            <span className="font-dm text-8xl lg:text-9xl">01</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
             <h3 className="mb-7 font-ledger text-5xl">Подготовка</h3>
@@ -45,7 +45,7 @@ const Approach = () => {
               width="92"
               height="92"
             />
-            <span className="font-jost text-8xl">02</span>
+            <span className="font-dm text-8xl lg:text-9xl">02</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
             <h3 className="mb-7 font-ledger text-4xl sm:text-5xl">
@@ -69,7 +69,7 @@ const Approach = () => {
         <div className="flex size-full max-w-[454px] flex-col justify-center">
           <div className="mb-14 flex items-center justify-between">
             <Image src="/aps3.png" alt="иконка дома" width="92" height="92" />
-            <span className="font-jost text-8xl">03</span>
+            <span className="font-dm text-8xl lg:text-9xl">03</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
             <h3 className="mb-7 font-ledger text-4xl sm:text-5xl">
@@ -93,7 +93,7 @@ const Approach = () => {
               width="92"
               height="92"
             />
-            <span className="font-jost text-8xl">04</span>
+            <span className="font-dm text-8xl lg:text-9xl">04</span>
           </div>
           <div className="mr-16 flex size-full max-w-md flex-col">
             <h3 className="mb-7 font-ledger text-5xl">Компоновка проекта</h3>

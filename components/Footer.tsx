@@ -18,7 +18,7 @@ const Footer = () => {
           target="_blank"
         >
           <Button className="bg-golden-beige px-10">
-            Заказать дизайн <ArrowRight className="ml-3" />
+            Заказать <ArrowRight className="ml-3" />
           </Button>
         </Link>
       </div>
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex size-full items-center justify-center gap-4">
             <Link href="https://t.me/makfflury" target="_blank">
               <Image
-                src="/telegram.png"
+                src="/telegram.svg"
                 alt="иконка телеграмма"
                 width={32}
                 height={32}
@@ -43,7 +43,7 @@ const Footer = () => {
               target="_blank"
             >
               <Image
-                src="/whatsapp.png"
+                src="/whatsapp.svg"
                 alt="иконка whatsapp"
                 width={32}
                 height={32}
@@ -51,7 +51,7 @@ const Footer = () => {
             </Link>
             <Link href="/">
               <Image
-                src="/discord.png"
+                src="/behance.svg"
                 alt="иконка discord"
                 width={32}
                 height={32}
@@ -59,7 +59,7 @@ const Footer = () => {
             </Link>
             <Link href="/">
               <Image
-                src="/instagram.png"
+                src="/instagram.svg"
                 alt="иконка instagram"
                 width={32}
                 height={32}

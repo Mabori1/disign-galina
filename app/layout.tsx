@@ -6,10 +6,14 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
-import { useRouter } from "next/router";
 
 const jostFonts = localFont({
   src: [
+    {
+      path: "./fonts/DMSerifDisplay-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
     {
       path: "./fonts/Jost-Regular.woff2",
       weight: "400",

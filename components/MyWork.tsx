@@ -35,7 +35,7 @@ const MyWork = () => {
                   </sup>
                 </span>
               </div>
-              <Link href={`/portfolio/${item.id}`}>
+              <Link href={`/portfolio`}>
                 <Image
                   src="/circleRight.svg"
                   width={70}

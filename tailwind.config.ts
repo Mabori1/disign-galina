@@ -23,6 +23,7 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         jost: ["Jost", ...fontFamily.sans],
         ledger: ["Ledger", ...fontFamily.sans],
+        dm: ["DM", ...fontFamily.sans],
       },
       colors: {
         "golden-beige": "#CDA274",
