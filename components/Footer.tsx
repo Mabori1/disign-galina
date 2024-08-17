@@ -87,7 +87,7 @@ const Footer = () => {
           <span>г. Краснодар, проезд Дальний 11к1</span>
 
           <Link
-            href={`mailto:ph.makflya@mail.ru&body=привет?subject=вопрос`}
+            href={`mailto:ph.makflya@mail.ru`}
             className="cursor-pointer hover:text-neutral-500"
           >
             <span>ph.makflya@mail.ru</span>
