@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="Главная"
-      className="mx-auto my-28 mt-10 flex size-full flex-col text-black"
+      className="mx-auto mt-10 flex size-full flex-col text-black"
     >
       <div className="relative left-1/2 top-[60px] mx-auto h-auto w-[100vw] translate-x-[-50%] overflow-hidden rounded-bl-[50px] md:rounded-bl-[100px] lg:rounded-bl-[200px]">
         <Image
@@ -27,10 +27,12 @@ const Hero = () => {
           понимания ваших потребностей, желаний и образа жизни
         </p>
       </div>
-      <div className="mx-auto my-28 flex flex-wrap-reverse items-center justify-center">
-        <div className="mr-16 flex max-w-md flex-col">
-          <h2 className="my-7 font-ledger text-5xl lg:text-6xl">Обо Мне</h2>
-          <p className="mb-11 font-jost text-2xl md:text-3xl lg:text-2xl">
+      <div className="mx-auto my-20 flex flex-wrap-reverse justify-between md:justify-between">
+        <div className="flex max-w-md flex-col">
+          <h2 className="mb-3 mt-7 text-center font-ledger text-4xl lg:text-6xl">
+            Обо Мне
+          </h2>
+          <p className="mb-11 font-jost text-[22px] leading-6 md:text-3xl lg:text-2xl">
             Меня зовут Галина, я - профессиональный дизайнер интерьера с
             многолетним опытом, моя задача создать для вас пространство, в
             котором хочется жить! Обращаю внимание не только на визуальную
@@ -42,13 +44,13 @@ const Hero = () => {
             выбора с возможной альтернативой
           </p>
 
-          <Link href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос">
+          <Link href="https://wa.me/79884892654" className="text-center">
             <Button>
               Заказать <ArrowRight className="ml-3" />
             </Button>
           </Link>
         </div>
-        <div className="my-5 size-full max-w-[653px]">
+        <div className="mb-5 size-full max-w-[653px]">
           <Image src="/about.jpg" alt="Обо мне" width={653} height={735} />
         </div>
       </div>

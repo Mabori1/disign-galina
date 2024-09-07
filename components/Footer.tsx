@@ -28,7 +28,7 @@ const Footer = () => {
           <Link href="https://t.me/makfflury" target="_blank">
             <Image src="/logo.png" alt="logo" width={382} height={82} />
           </Link>
-          <p className="mb-5">Социальные сети</p>
+          <p className="mb-2 font-jost text-[22px]">Социальные сети</p>
           <div className="flex size-full items-center justify-center gap-4">
             <Link href="https://t.me/makfflury" target="_blank">
               <Image
@@ -38,10 +38,7 @@ const Footer = () => {
                 height={32}
               />
             </Link>
-            <Link
-              href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
-              target="_blank"
-            >
+            <Link href="https://wa.me/79884892654" target="_blank">
               <Image
                 src="/whatsapp.svg"
                 alt="иконка whatsapp"
@@ -49,17 +46,17 @@ const Footer = () => {
                 height={32}
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.behance.net/galinamakeeva">
               <Image
                 src="/behance.svg"
-                alt="иконка discord"
+                alt="иконка behance"
                 width={32}
                 height={32}
               />
             </Link>
-            <Link href="/">
+            <Link href="mailto:ph.makflya@mail.ru">
               <Image
-                src="/instagram.svg"
+                src="/mail.svg"
                 alt="иконка instagram"
                 width={32}
                 height={32}

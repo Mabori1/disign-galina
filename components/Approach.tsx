@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-28">
+    <section className="mb-28 flex flex-col flex-wrap items-center rounded-3xl bg-isabelline pt-10">
       <div className="mx-auto flex flex-col items-center">
-        <h2 className="mb-5 text-center font-ledger text-7xl">Как я работаю</h2>
-        <p className="mb-11 text-center font-jost text-2xl">
+        <h2 className="mb-3 text-center font-ledger text-4xl">Как я работаю</h2>
+        <p className="mb-11 text-center font-jost text-lg leading-6">
           Для тех, кто ценит время и деньги
         </p>
       </div>
