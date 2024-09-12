@@ -6,10 +6,10 @@ import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col items-center bg-white py-20">
-      <div className="mx-3 mb-10 flex size-full h-[374px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:max-w-[60%]">
+    <section className="flex flex-col items-center bg-white py-5 lg:py-20">
+      <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
         <h3 className="font-ledger text-4xl md:text-6xl">Остались вопросы?</h3>
-        <p className="font-jost text-2xl">
+        <p className="font-jost text-xl lg:text-2xl">
           Закажите обратный звонок и мы свяжемся с Вами
         </p>
 
@@ -23,9 +23,9 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-20">
+      <div className="flex flex-wrap justify-center gap-5 lg:gap-20">
         <div className="flex flex-col items-center">
-          <Link href="https://t.me/makfflury" target="_blank">
+          <Link href="https://t.me/makfflury" target="_blank" className="px-5">
             <Image src="/logo.png" alt="logo" width={382} height={82} />
           </Link>
           <p className="mb-2 font-jost text-[22px]">Социальные сети</p>
@@ -65,21 +65,21 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-5 flex flex-col gap-1">
-          <p className="mb-2 text-xl font-bold">Страницы</p>
+        <div className="flex flex-col items-center gap-1 lg:mt-5 lg:items-start">
+          <p className="text-sm font-bold lg:mb-2 lg:text-xl">Страницы</p>
           {navHeader.map((navItem, index) => (
             <Link
               key={`link=${index}`}
               href={`${navItem.link}`}
-              className="space-x-1 font-jost text-xl text-nightshade-blue hover:text-neutral-500"
+              className="space-x-1 font-jost text-sm text-nightshade-blue hover:text-neutral-500 lg:text-xl"
             >
               <span className="cursor-pointer">{navItem.label}</span>
             </Link>
           ))}
         </div>
 
-        <div className="mt-5 flex flex-col gap-1 font-jost text-xl text-nightshade-blue">
-          <p className="mb-2 text-xl font-bold">Контакты</p>
+        <div className="flex flex-col gap-1 font-jost text-sm text-nightshade-blue lg:mt-5 lg:text-xl">
+          <p className="mb-2 text-sm font-bold lg:text-xl">Контакты</p>
 
           <span>г. Краснодар, проезд Дальний 11к1</span>
 

@@ -31,8 +31,10 @@ const MyWork = () => {
             </div>
             <div className="flex items-center justify-between px-2">
               <div className="flex flex-col gap-1">
-                <h3 className="font-ledger text-2xl">{item.title},</h3>
-                <span className="font-jost text-2xl">
+                <h3 className="font-ledger text-xl lg:text-2xl">
+                  {item.title},
+                </h3>
+                <span className="font-jost text-xl lg:text-2xl">
                   {`${item.square} м`}
                   <sup>
                     <small>2</small>
@@ -52,22 +54,28 @@ const MyWork = () => {
         ))}
       </div>
 
-      <div className="mb-20 flex size-full min-h-[460px] max-w-[1920px] flex-wrap items-center justify-center gap-10 rounded-3xl bg-isabelline py-10">
-        <div className="flex flex-col items-center lg:border-r lg:border-r-golden-beige">
-          <span className="mx-20 text-8xl text-golden-beige">4+</span>
-          <p className="font-jost text-2xl text-typewriter-Ink">
+      <div className="flex size-full max-w-[1920px] items-center justify-center rounded-3xl bg-isabelline py-10 lg:mb-20 lg:min-h-[460px] lg:gap-10">
+        <div className="flex flex-col items-center border-r border-r-golden-beige">
+          <span className="text-4xl text-golden-beige lg:mx-20 lg:text-8xl">
+            4+
+          </span>
+          <p className="mx-2 font-jost text-xs text-typewriter-Ink lg:text-2xl">
             Года практики
           </p>
         </div>
-        <div className="flex flex-col items-center lg:border-r lg:border-r-golden-beige">
-          <span className="mx-20 text-8xl text-golden-beige">60+</span>
-          <p className="font-jost text-2xl text-typewriter-Ink">
+        <div className="flex flex-col items-center border-r border-r-golden-beige">
+          <span className="gl:mx-20 text-4xl text-golden-beige lg:text-8xl">
+            60+
+          </span>
+          <p className="mx-2 font-jost text-xs text-typewriter-Ink lg:text-2xl">
             Готовых проектов
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <span className="mx-20 text-8xl text-golden-beige">90</span>
-          <p className="font-jost text-2xl text-typewriter-Ink">
+          <span className="text-4xl text-golden-beige lg:mx-20 lg:text-8xl">
+            90
+          </span>
+          <p className="mx-2 font-jost text-xs text-typewriter-Ink lg:text-2xl">
             Довольных заказчиков
           </p>
         </div>
