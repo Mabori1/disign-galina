@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className="mb-1 max-w-3xl text-wrap font-ledger text-[22px] md:text-4xl lg:mb-5 lg:text-7xl">
           Дом - зеркало вашей души
         </h1>
-        <p className="font-jost text-xs md:text-sm lg:text-2xl">
+        <p className="font-jost text-sm lg:text-2xl">
           Создание дизайна интерьера уникальный процесс, требующий глубокого
           понимания ваших потребностей, желаний и образа жизни
         </p>
@@ -32,7 +32,7 @@ const Hero = () => {
           <h2 className="mb-3 font-ledger text-[22px] md:text-[24px] lg:mt-7 lg:text-center lg:text-6xl">
             Обо Мне
           </h2>
-          <p className="mb-5 font-jost text-xs md:text-sm lg:mb-11 lg:text-2xl">
+          <p className="mb-5 font-jost text-sm lg:mb-11 lg:text-2xl">
             Меня зовут Галина, я - профессиональный дизайнер интерьера с
             многолетним опытом, моя задача создать для вас пространство, в
             котором хочется жить! Обращаю внимание не только на визуальную

@@ -10,7 +10,7 @@ const MyWork = () => {
         <h2 className="mb-1 text-center font-ledger text-[22px] lg:mb-3 lg:text-6xl">
           Мои работы
         </h2>
-        <p className="mb-4 text-center font-jost text-xs lg:mb-11 lg:text-2xl">
+        <p className="mb-4 text-center font-jost text-sm lg:mb-11 lg:text-2xl">
           Во власти качества
         </p>
       </div>

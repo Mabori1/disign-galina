@@ -8,12 +8,12 @@ const Approach = () => {
         <h2 className="mb-1 text-center font-ledger text-[22px] lg:mb-3 lg:text-6xl">
           Как я работаю
         </h2>
-        <p className="mb-4 text-center font-jost text-xs lg:mb-11 lg:text-2xl">
+        <p className="mb-4 text-center font-jost text-sm lg:mb-11 lg:text-2xl">
           Для тех, кто ценит время и деньги
         </p>
       </div>
 
-      <div className="mx-auto mt-10 flex w-full max-w-[1030px] flex-wrap-reverse items-center justify-center px-4 lg:mb-16 lg:gap-12">
+      <div className="mx-auto flex w-full max-w-[1030px] flex-wrap-reverse items-center justify-center px-4 lg:mb-16 lg:mt-10 lg:gap-12">
         <div className="size-full max-w-[454px] overflow-hidden rounded-bl-[400px] rounded-tr-[100px] border border-black">
           <Image src="/ap1.jpg" alt="фото стола" width={454} height={486} />
         </div>
@@ -32,7 +32,7 @@ const Approach = () => {
             <h3 className="mb-2 text-center font-ledger text-[22px] lg:mb-7 lg:text-5xl">
               Подготовка
             </h3>
-            <p className="mb-2 font-jost text-xs text-typewriter-Ink lg:mb-11 lg:text-2xl">
+            <p className="mb-2 font-jost text-sm text-typewriter-Ink lg:mb-11 lg:text-2xl">
               Выезд на объект для замера и фотофиксации всех помещений
               коммуникаций, подписание договора, сбор подробного технического
               задания
@@ -57,7 +57,7 @@ const Approach = () => {
             <h3 className="mb-2 text-center font-ledger text-[22px] lg:mb-7 lg:text-5xl">
               Планировочное решение
             </h3>
-            <p className="mb-2 font-jost text-xs text-typewriter-Ink lg:mb-11 lg:text-2xl">
+            <p className="mb-2 font-jost text-sm text-typewriter-Ink lg:mb-11 lg:text-2xl">
               Изготовление пакета чертежей, таких как: обмерный план,
               расстановки мебели в нескольких вариантах
             </p>
@@ -88,7 +88,7 @@ const Approach = () => {
               Концепция и <br />
               3D-Визуализация
             </h3>
-            <p className="mb-2 font-jost text-xs text-typewriter-Ink lg:mb-11 lg:text-2xl">
+            <p className="mb-2 font-jost text-sm text-typewriter-Ink lg:mb-11 lg:text-2xl">
               Разработка концепции и визуального стиля, отрисовка
               фотореалистичных 3D-Визуализаций
             </p>
@@ -112,7 +112,7 @@ const Approach = () => {
             <h3 className="mb-2 text-center font-ledger text-[22px] lg:mb-7 lg:text-5xl">
               Компоновка проекта
             </h3>
-            <p className="mb-2 font-jost text-xs text-typewriter-Ink lg:mb-11 lg:text-2xl">
+            <p className="mb-2 font-jost text-sm text-typewriter-Ink lg:mb-11 lg:text-2xl">
               Создание дополнительных комплкетов чертежей для строителей, таких
               как: план пола, потолка, плинтусов, розеток и тд.
             </p>
