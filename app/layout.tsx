@@ -60,7 +60,7 @@ export default function RootLayout({
       >
         <GoogleAnalytics gaId="G-E9RQ686PDL" />
         <Header />
-        <main className="mx-auto flex size-full max-w-7xl flex-1 flex-col bg-white px-5 sm:px-10">
+        <main className="mx-auto flex size-full max-w-7xl flex-1 flex-col bg-white lg:px-5">
           {children}
         </main>
         <Footer />

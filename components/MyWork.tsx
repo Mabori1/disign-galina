@@ -7,11 +7,15 @@ const MyWork = () => {
   return (
     <section className="flex flex-col items-center">
       <div className="mx-auto flex max-w-lg flex-col items-center">
-        <h2 className="mb-5 text-center font-ledger text-7xl">Мои работы</h2>
-        <p className="text-center font-jost text-2xl">Во власти качества</p>
+        <h2 className="mb-1 text-center font-ledger text-[22px] lg:mb-3 lg:text-6xl">
+          Мои работы
+        </h2>
+        <p className="mb-4 text-center font-jost text-xs lg:mb-11 lg:text-2xl">
+          Во власти качества
+        </p>
       </div>
 
-      <div className="mx-auto my-28 flex w-full max-w-[1201px] flex-wrap items-center justify-center gap-x-28 gap-y-12">
+      <div className="mx-auto mb-11 flex w-full max-w-[1201px] flex-wrap items-center justify-center gap-y-11 lg:my-28 lg:gap-x-28 lg:gap-y-12">
         {myWork.map((item, index) => (
           <div key={index} className="flex flex-col justify-center">
             <div
@@ -25,7 +29,7 @@ const MyWork = () => {
             >
               <Image src={item.img} alt={item.title} width={548} height={525} />
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between px-2">
               <div className="flex flex-col gap-1">
                 <h3 className="font-ledger text-2xl">{item.title},</h3>
                 <span className="font-jost text-2xl">
