@@ -50,16 +50,16 @@ const Footer = () => {
               <Image
                 src="/Behance.svg"
                 alt="иконка behance"
-                width={32}
-                height={32}
+                width={36}
+                height={36}
               />
             </Link>
             <Link href="mailto:ph.makflya@mail.ru">
               <Image
                 src="/mail.svg"
                 alt="иконка instagram"
-                width={32}
-                height={32}
+                width={40}
+                height={40}
               />
             </Link>
           </div>
