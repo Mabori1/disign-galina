@@ -48,7 +48,7 @@ const Footer = () => {
             </Link>
             <Link href="https://www.behance.net/galinamakeeva">
               <Image
-                src="/behance.svg"
+                src="/Behance.svg"
                 alt="иконка behance"
                 width={32}
                 height={32}
