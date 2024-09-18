@@ -10,7 +10,7 @@ const Hero = () => {
       id="Главная"
       className="mx-auto mt-10 flex size-full flex-col text-black"
     >
-      <div className="relative left-1/2 top-[60px] mx-auto h-auto w-[100vw] translate-x-[-50%] overflow-hidden rounded-bl-[150px] lg:rounded-bl-[200px]">
+      <div className="relative left-1/2 top-[30px] mx-auto h-auto w-[100vw] translate-x-[-50%] overflow-hidden rounded-bl-[150px] lg:top-[60px] lg:rounded-bl-[200px]">
         <Image
           src="/hero.jpg"
           alt="Главное фото сайта"

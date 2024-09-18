@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <section>
       <div className="relative mx-auto flex h-full w-full flex-col items-center justify-center">
-        <div className="min-h-96 w-[100vw] pt-28">
+        <div className="max-h-[60vh] w-[100vw] pt-16 lg:min-h-96 lg:pt-28">
           <Image
             src="/portfolio-img.jpg"
             alt="фото интерьера"
@@ -15,15 +15,17 @@ const Page = () => {
             height={384}
           />
 
-          <div className="absolute -bottom-0.5 left-1/2 flex h-44 min-w-[503px] translate-x-[-50%] flex-col flex-wrap items-center justify-center gap-4 overflow-hidden rounded rounded-t-3xl bg-white font-ledger">
-            <h1 className="text-5xl font-medium">Портфолио</h1>
-            <p className="font-jost text-2xl text-typewriter-Ink">
+          <div className="absolute left-1/2 top-[70%] flex h-[40%] min-w-[40%] translate-x-[-50%] flex-col items-center justify-center overflow-hidden rounded rounded-t-3xl bg-white font-ledger lg:top-[65%] lg:gap-4">
+            <h1 className="text-xl font-medium md:text-4xl lg:text-5xl">
+              Портфолио
+            </h1>
+            <p className="font-jost text-sm text-typewriter-Ink md:text-xl lg:text-2xl">
               Во власти качества
             </p>
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-28 flex flex-wrap items-start justify-center gap-4 overflow-hidden">
+      <div className="mx-auto mt-5 flex items-start justify-center overflow-hidden lg:mt-28 lg:gap-4">
         <div className="flex flex-col">
           {portfolioContent1.map((item) => (
             <div
@@ -43,8 +45,10 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex flex-col gap-1">
-                  <h3 className="font-ledger text-2xl">{item.title},</h3>
-                  <span className="font-jost text-[22px] text-typewriter-Ink">
+                  <h3 className="font-ledger text-xs lg:text-2xl">
+                    {item.title},
+                  </h3>
+                  <span className="font-jost text-xs text-typewriter-Ink lg:text-[22px]">
                     {`${item.text} м`}
                     <sup>
                       <small>2</small>
@@ -53,6 +57,7 @@ const Page = () => {
                 </div>
                 <Link href={`/portfolio/${item.id}`}>
                   <Image
+                    className="size-10 lg:size-16"
                     src="/circleRight.svg"
                     width={70}
                     alt="arrow"
@@ -82,8 +87,10 @@ const Page = () => {
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex flex-col gap-1">
-                  <h3 className="font-ledger text-2xl">{item.title},</h3>
-                  <span className="font-jost text-[22px] text-typewriter-Ink">
+                  <h3 className="font-ledger text-xs lg:text-2xl">
+                    {item.title},
+                  </h3>
+                  <span className="font-jost text-xs text-typewriter-Ink lg:text-[22px]">
                     {`${item.text} м`}
                     <sup>
                       <small>2</small>
@@ -92,6 +99,7 @@ const Page = () => {
                 </div>
                 <Link href={`/portfolio/${item.id}`}>
                   <Image
+                    className="size-10 lg:size-16"
                     src="/circleRight.svg"
                     width={70}
                     alt="arrow"
