@@ -28,14 +28,16 @@ const Footer = () => {
           <Link href="https://t.me/makfflury" target="_blank" className="px-5">
             <Image src="/logo.png" alt="logo" width={382} height={82} />
           </Link>
-          <p className="mb-2 font-jost text-[22px]">Социальные сети</p>
+          <p className="mb-2 font-jost text-base lg:text-[22px]">
+            Социальные сети
+          </p>
           <div className="flex size-full items-center justify-center gap-4">
             <Link href="https://t.me/makfflury" target="_blank">
               <Image
                 src="/telegram.svg"
                 alt="иконка телеграмма"
-                width={32}
-                height={32}
+                width={38}
+                height={38}
               />
             </Link>
             <Link href="https://wa.me/79884892654" target="_blank">
@@ -65,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-1 lg:mt-5 lg:items-start">
+        <div className="mx-6 flex flex-col items-center gap-1 lg:mt-5 lg:items-start">
           <p className="text-sm font-bold lg:mb-2 lg:text-xl">Страницы</p>
           {navHeader.map((navItem, index) => (
             <Link
@@ -78,8 +80,8 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="flex flex-col gap-1 font-jost text-sm text-nightshade-blue lg:mt-5 lg:text-xl">
-          <p className="mb-2 text-sm font-bold lg:text-xl">Контакты</p>
+        <div className="flex flex-col gap-3 font-jost text-sm text-nightshade-blue lg:mt-5 lg:text-xl">
+          <p className="text-sm font-bold lg:mb-2 lg:text-xl">Контакты</p>
 
           <span>г. Краснодар, проезд Дальний 11к1</span>
 
