@@ -32,10 +32,10 @@ const Page = () => {
               key={item.id}
               id={item.id}
               className={cn(
-                "flex max-h-min max-w-[585px] flex-col overflow-hidden p-5 hover:shadow-xl",
+                "flex max-h-min max-w-[585px] flex-col overflow-hidden p-3 hover:shadow-xl lg:p-5",
               )}
             >
-              <div className="mb-7 h-auto max-w-[585px] overflow-hidden">
+              <div className="mb-2 h-auto max-w-[585px] overflow-hidden lg:mb-7">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -74,10 +74,10 @@ const Page = () => {
               key={item.id}
               id={item.id}
               className={cn(
-                "flex max-h-min max-w-[585px] flex-col overflow-hidden p-5 hover:shadow-xl",
+                "flex max-h-min max-w-[585px] flex-col overflow-hidden p-3 hover:shadow-xl lg:p-5",
               )}
             >
-              <div className="mb-7 h-auto max-w-[585px] overflow-hidden">
+              <div className="mb-2 h-auto max-w-[585px] overflow-hidden lg:mb-7">
                 <Image
                   src={item.img}
                   alt={item.title}

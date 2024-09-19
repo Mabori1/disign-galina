@@ -108,7 +108,7 @@ export function ImageCarousel(props: ImageCarouselProps) {
         {Array.from({ length: count }).map((_, index) => (
           <div
             key={index}
-            className={`h-2 w-9 rounded-full transition-colors duration-300 ${
+            className={`h-1 w-7 rounded-full transition-colors duration-300 lg:h-2 lg:w-9 ${
               current - 1 === index ? "bg-sky-50" : "bg-white/60"
             }`}
           ></div>

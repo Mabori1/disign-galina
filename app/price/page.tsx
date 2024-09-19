@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <section>
       <div className="relative mx-auto flex h-full w-full flex-col items-center justify-center">
-        <div className="min-h-96 w-[100vw] pt-28">
+        <div className="max-h-[60vh] w-[100vw] pt-16 lg:min-h-96 lg:pt-28">
           <Image
             src="/price-img.jpg"
             alt="фото интерьера"
@@ -17,33 +17,35 @@ const Page = () => {
             height={384}
           />
 
-          <div className="absolute -bottom-0.5 left-1/2 flex h-44 min-w-[503px] translate-x-[-50%] flex-col flex-wrap items-center justify-center gap-4 overflow-hidden rounded rounded-t-3xl bg-white font-ledger">
-            <h1 className="text-5xl font-medium">Услуги и цены</h1>
-            <p className="font-jost text-2xl text-typewriter-Ink">
+          <div className="absolute left-1/2 top-[70%] flex h-[40%] min-w-[50%] translate-x-[-50%] flex-col items-center justify-center overflow-hidden rounded rounded-t-3xl bg-white font-ledger lg:top-[65%] lg:min-w-[40%] lg:gap-4">
+            <h1 className="text-xl font-medium md:text-4xl lg:text-5xl">
+              Услуги и цены
+            </h1>
+            <p className="font-jost text-sm text-typewriter-Ink md:text-xl lg:text-2xl">
               Качество выше, чем цена
             </p>
           </div>
         </div>
       </div>
-      <div className="mt-52 flex snap-y flex-wrap justify-center gap-4 overflow-hidden text-center">
+      <div className="mx-4 mt-4 flex snap-y flex-wrap justify-center gap-1 overflow-hidden text-center lg:mt-16 lg:gap-4">
         {priceContent.map((item) => (
           <div
             key={item.id}
             id={item.id}
             className={cn(
-              "flex h-[320px] max-w-[358px] snap-center scroll-mb-20 flex-col overflow-hidden rounded-2xl p-5 hover:shadow-xl",
+              "flex h-max max-w-[358px] snap-center scroll-mb-20 flex-col overflow-hidden rounded-2xl p-5 hover:shadow-xl",
 
               item.id === "спецификация" ? "bg-isabelline" : "",
             )}
           >
-            <h3 className="mb-5 font-ledger text-[25px] font-bold">
+            <h3 className="mb-2 font-ledger text-base font-bold lg:mb-5 lg:text-[25px]">
               {item.title}
             </h3>
-            <p className="font-jost text-[22px]">{item.text}</p>
+            <p className="font-jost text-sm lg:text-[22px]">{item.text}</p>
           </div>
         ))}
       </div>
-      <div className="mt-28 flex size-full flex-wrap justify-center gap-4 overflow-hidden text-center md:justify-between">
+      <div className="mt-4 flex size-full flex-wrap justify-center gap-1 overflow-hidden text-center md:justify-between lg:mt-12 lg:gap-4">
         {priceVariants.map((item) => (
           <div
             key={item.id}
