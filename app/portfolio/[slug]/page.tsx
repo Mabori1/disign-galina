@@ -1,6 +1,5 @@
 "use client";
 import { ImageCarousel } from "@/components/ImageCarousel";
-import { Button } from "@/components/ui/button";
 import { portfolioSlug } from "@/data";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
@@ -19,34 +18,22 @@ const Page = ({ params }: { params: { slug: string } }) => {
           width={1920}
           height={384}
         />
-        {/* <div className="absolute left-0 top-5 mt-28 h-96 w-[100vw] bg-[url('/portfolio-slug-hero.jpg')] bg-scroll bg-no-repeat"> */}
-        {/* <Image */}
-        {/*   src="/portfolio-slug-hero.jpg" */}
-        {/*   alt="фото интерьера" */}
-        {/*   width={1920} */}
-        {/*   height={384} */}
-        {/*   className="w-full object-center" */}
-        {/* /> */}
       </div>
       <div className="mx-auto mt-[23vw] flex flex-col justify-center">
         <div className="mt-12 flex flex-wrap lg:mt-24">
-          <div className="flex">
-            <Link href="/portfolio">
-              <Button
-                variant="outline"
-                className="my-5 bg-transparent md:my-0 lg:my-10"
-              >
-                <ArrowLeft
-                  className="mr-1 size-3 lg:mr-2 lg:size-6"
-                  width={25}
-                  height={23}
-                />
-                <span className="cursor-pointer font-jost text-sm font-medium lg:text-2xl">
-                  Назад
-                </span>
-              </Button>
-            </Link>
-          </div>
+          <Link
+            href="/portfolio"
+            className="z-20 flex cursor-pointer items-center"
+          >
+            <ArrowLeft
+              className="mr-1 size-3 lg:mr-2 lg:size-6"
+              width={25}
+              height={23}
+            />
+            <span className="cursor-pointer font-jost text-sm font-medium lg:text-2xl">
+              Назад
+            </span>
+          </Link>
           <div className="mx-auto flex max-w-[658px] flex-col px-4 lg:px-0">
             <h2 className="font-ledger text-lg md:text-3xl lg:text-4xl">
               {portfolio.title}

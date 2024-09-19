@@ -2,7 +2,7 @@ export const navHeader = [
   { label: "Главная", link: "/" },
   { label: "Портфолио", link: "/portfolio" },
   { label: "Услуги и цены", link: "/price" },
-  { label: "Контакты", link: "/contact" },
+  { label: "Контакты", link: "/contacts" },
 ];
 
 export const heroPhotos = [
@@ -180,7 +180,6 @@ export const portfolioSlug = [
       "/usa2-3.jpg",
       "/usa2-4.jpg",
       "/usa2-5.jpg",
-      "/usa2-6.jpg",
     ],
   },
   {
