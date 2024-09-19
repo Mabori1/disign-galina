@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { portfolioSlug } from "@/data";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Page = ({ params }: { params: { slug: string } }) => {
   const portfolio = portfolioSlug.find((item) => item.id === params.slug);
@@ -30,16 +31,21 @@ const Page = ({ params }: { params: { slug: string } }) => {
       <div className="mx-auto mt-[23vw] flex flex-col justify-center">
         <div className="mt-12 flex flex-wrap lg:mt-24">
           <div className="flex">
-            <Button
-              variant="outline"
-              onClick={() => window.history.back()}
-              className="my-5 bg-transparent md:my-0 lg:my-10"
-            >
-              <ArrowLeft className="mr-3" width={25} height={23} />
-              <span className="cursor-pointer font-jost text-2xl font-medium">
-                Назад
-              </span>
-            </Button>
+            <Link href="/portfolio">
+              <Button
+                variant="outline"
+                className="my-5 bg-transparent md:my-0 lg:my-10"
+              >
+                <ArrowLeft
+                  className="mr-1 size-3 lg:mr-2 lg:size-6"
+                  width={25}
+                  height={23}
+                />
+                <span className="cursor-pointer font-jost text-sm font-medium lg:text-2xl">
+                  Назад
+                </span>
+              </Button>
+            </Link>
           </div>
           <div className="mx-auto flex max-w-[658px] flex-col px-4 lg:px-0">
             <h2 className="font-ledger text-lg md:text-3xl lg:text-4xl">
