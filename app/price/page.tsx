@@ -45,44 +45,44 @@ const Page = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4 flex size-full flex-wrap justify-center gap-1 overflow-hidden text-center md:justify-between lg:mt-12 lg:gap-4">
+      <div className="mx-2 mt-4 flex size-full justify-center overflow-hidden px-2 text-center md:justify-between lg:mt-12 lg:gap-4 lg:px-4">
         {priceVariants.map((item) => (
           <div
             key={item.id}
             id={item.id}
             className={cn(
-              "m-5 flex size-full min-h-[723px] flex-col overflow-hidden rounded-2xl border bg-isabelline pt-16 hover:shadow-xl md:mx-1 lg:max-w-[31%]",
+              "mx-1 flex size-full min-h-[450px] flex-col overflow-hidden rounded-2xl border bg-isabelline hover:shadow-xl md:mx-1 lg:m-5 lg:min-h-[723px] lg:max-w-[31%] lg:pt-16",
             )}
           >
             <div
               className={cn(
-                "relative h-[210px] border-b",
+                "relative h-[140px] border-b lg:h-[210px]",
                 item.id === "2" ? "border-b-black" : "border-b-golden-beige",
               )}
             >
               {item.id === "2" && (
-                <div className="absolute -bottom-5 left-1/2 flex h-11 w-2/3 translate-x-[-50%] items-center justify-center rounded-full bg-nightshade-blue text-center font-jost text-[1.125rem] text-white">
+                <div className="absolute bottom-2 left-1/2 flex h-11 w-2/3 translate-x-[-50%] items-center justify-center rounded-xl bg-nightshade-blue text-center font-jost text-xs text-white lg:-bottom-5 lg:rounded-full lg:text-[1.125rem]">
                   Самый популярный
                 </div>
               )}
-              <h3 className="mb-5 font-ledger text-[25px] font-bold">
+              <h3 className="my-3 font-ledger text-sm font-bold lg:mb-5 lg:text-[25px]">
                 {item.title}
               </h3>
-              <h2 className="mx-auto font-ledger text-7xl font-bold">
+              <h2 className="mx-auto font-ledger text-sm font-bold lg:text-7xl">
                 {item.price}
               </h2>
-              <p className="font-serif text-4xl">
+              <p className="font-serif text-sm lg:text-4xl">
                 м
                 <sup>
                   <small>2</small>
                 </sup>
               </p>
             </div>
-            <div className="flex grow items-center justify-center">
-              <ul className="flex flex-col gap-4">
+            <div className="mt-8 flex grow pl-2 text-start lg:pl-8">
+              <ul className="flex flex-col gap-1 lg:gap-4">
                 {item.content.map((elem, i) => (
                   <li
-                    className="list-inside list-disc font-jost text-2xl text-typewriter-Ink"
+                    className="list-inside list-disc font-jost text-xs text-typewriter-Ink lg:text-2xl"
                     key={i}
                   >
                     <Link href={`#${priceContent[elem].id}`}>
@@ -93,16 +93,17 @@ const Page = () => {
               </ul>
             </div>
 
-            <Link href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос">
+            <Link href="https://wa.me/79884892654">
               <Button
                 className={cn(
-                  "mb-6 px-8",
+                  "mb-6 px-2 text-sm lg:px-8",
                   item.id === "2"
                     ? "bg-nightshade-blue hover:bg-golden-beige"
                     : "bg-golden-beige",
                 )}
               >
-                Заказать <ArrowRight className="ml-3" />
+                Заказать{" "}
+                <ArrowRight className="ml-1 size-4 lg:ml-3 lg:size-8" />
               </Button>
             </Link>
           </div>
