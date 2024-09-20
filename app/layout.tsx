@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const jostFonts = localFont({
   src: [
@@ -64,6 +65,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+
+        <Toaster />
       </body>
     </html>
   );
