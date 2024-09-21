@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight } from "lucide-react";
+import { sendMail } from "@/lib/send-mail";
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -47,15 +47,31 @@ const Page = () => {
     },
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    const mailText = `<p>Отправлено с сайта design-gm.ru</p><br>
+        <p><strong>Name: </strong> ${data.username}</p><br>
+        <p><strong>Email: </strong> ${data.email}</p><br>
+        <p><strong>Address: </strong> ${data.address}</p><br>
+        <p><strong>Phone: </strong> ${data.telephone}</p><br>
+        <p><strong>Message: </strong> ${data.description}</p><br>`;
+
+    const response = await sendMail({
+      email: data.email,
+      sendTo: process.env.SITE_MAIL_RECIEVER,
+      subject: `Contact form submission from ${data.username}`,
+      text: "отправлено из google API",
+      html: mailText,
     });
+
+    if (response?.messageId) {
+      toast({
+        description: "Почта успешно отправлена.",
+      });
+    } else {
+      toast({
+        description: "Почта не отправлена.",
+      });
+    }
   }
 
   return (

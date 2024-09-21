@@ -1,28 +1,48 @@
+"use client";
 import { navHeader } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [isContacts, setIsContacts] = useState(false);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsContacts(pathname === "/contacts");
+  }, [pathname]);
+
   return (
     <section className="flex flex-col items-center bg-white py-5 lg:py-20">
-      <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
-        <h3 className="font-ledger text-4xl md:text-6xl">Остались вопросы?</h3>
-        <p className="font-jost text-xl lg:text-2xl">
-          Закажите обратный звонок и мы свяжемся с Вами
-        </p>
+      {isContacts ? (
+        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 overflow-hidden rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
+          <Image
+            src="/map.jpg"
+            alt="карта местонахождения"
+            width={1199}
+            height={501}
+          />
+        </div>
+      ) : (
+        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
+          <h3 className="font-ledger text-4xl md:text-6xl">
+            Остались вопросы?
+          </h3>
+          <p className="font-jost text-xl lg:text-2xl">
+            Закажите обратный звонок и мы свяжемся с Вами
+          </p>
 
-        <Link
-          href="https://wa.me/79884892654?text=Здравствуйте%2C+у+меня+есть+вопрос"
-          target="_blank"
-        >
-          <Button className="bg-golden-beige px-10">
-            Заказать <ArrowRight className="ml-3" />
-          </Button>
-        </Link>
-      </div>
-
+          <Link href="/contacts" target="_blank">
+            <Button className="bg-golden-beige px-10">
+              Заказать <ArrowRight className="ml-3" />
+            </Button>
+          </Link>
+        </div>
+      )}
       <div className="flex flex-wrap justify-center gap-5 lg:gap-20">
         <div className="flex flex-col items-center">
           <Link href="https://t.me/makfflury" target="_blank" className="px-5">
