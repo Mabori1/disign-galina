@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <section className="flex flex-col items-center bg-white py-5 lg:py-20">
       {isContacts ? (
-        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 overflow-hidden rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
+        <div className="mx-3 mb-10 flex size-full h-[130px] max-w-[80%] flex-col items-center justify-center gap-5 overflow-hidden rounded-[30px] text-center text-white md:h-[274px] lg:h-[350px] lg:max-w-[60%] lg:rounded-[70px]">
           <Image
             src="/map.jpg"
             alt="карта местонахождения"
