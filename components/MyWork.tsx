@@ -64,7 +64,7 @@ const MyWork = () => {
           </p>
         </div>
         <div className="flex flex-col items-center border-r border-r-golden-beige">
-          <span className="gl:mx-20 text-4xl text-golden-beige lg:text-8xl">
+          <span className="text-4xl text-golden-beige lg:mx-20 lg:text-8xl">
             60+
           </span>
           <p className="mx-2 font-jost text-xs text-typewriter-Ink lg:text-2xl">

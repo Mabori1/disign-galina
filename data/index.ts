@@ -138,7 +138,7 @@ export const portfolioContent2 = [
 export const priceVariants = [
   {
     id: "1",
-    title: "Технический проект",
+    title: "Тех. проект",
     price: "1700",
     content: [0, 1, 5],
   },

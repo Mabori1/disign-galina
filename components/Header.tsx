@@ -36,7 +36,7 @@ const Header = () => {
       <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-6 lg:max-w-7xl">
         <div className="flex items-center justify-between py-3 md:block md:py-5">
           <div className="mr-4 flex w-[200px] shrink md:w-[250px] lg:w-[300px]">
-            <Link href="https://t.me/makfflury" target="_blank">
+            <Link href="/">
               <Image src="/logo.png" alt="logo" width={332} height={72} />
             </Link>
           </div>

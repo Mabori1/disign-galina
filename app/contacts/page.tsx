@@ -85,11 +85,11 @@ const Page = () => {
             height={384}
           />
 
-          <div className="absolute left-1/2 top-[70%] flex h-[40%] min-w-[40%] translate-x-[-50%] flex-col items-center justify-center overflow-hidden rounded rounded-t-3xl bg-white font-ledger lg:top-[65%] lg:gap-4">
+          <div className="absolute left-1/2 top-[65%] flex h-[40%] min-w-[50%] translate-x-[-50%] flex-col items-center justify-center overflow-hidden rounded rounded-t-3xl bg-white font-ledger md:min-w-[40%] lg:top-[62%] lg:gap-4">
             <h1 className="text-xl font-medium md:text-4xl lg:text-5xl">
               Контакты
             </h1>
-            <p className="font-jost text-sm text-typewriter-Ink md:text-xl lg:text-2xl">
+            <p className="font-jost text-xs text-typewriter-Ink md:text-xl lg:text-2xl">
               Работаем, чтобы вы отдыхали
             </p>
           </div>
@@ -156,11 +156,11 @@ const Page = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap">
+          <div className="mx-4 flex flex-wrap">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="flex max-w-[624px] flex-col flex-wrap justify-between gap-6 md:flex-row"
+                className="flex max-w-[624px] flex-col flex-wrap items-center justify-between gap-6 md:flex-row"
               >
                 <FormField
                   control={form.control}
@@ -201,7 +201,7 @@ const Page = () => {
                     <FormItem>
                       <FormControl>
                         <Input
-                          placeholder="Адрес"
+                          placeholder="Квартира/дом"
                           {...field}
                           className="w-[300px]"
                         />
@@ -242,7 +242,16 @@ const Page = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="ml-auto rounded-2xl p-7">
+                <div className="md:max-w-[400px] lg:max-w-[624px]">
+                  <Link href="/policy">
+                    <p className="cursor-pointer text-xs underline lg:text-base">
+                      Нажимая на кнопку, вы даете согласие на обработку
+                      персональных данных и соглашаетесь с политикой
+                      конфиденциальности
+                    </p>
+                  </Link>
+                </div>
+                <Button type="submit" className="ml-auto rounded-full p-7">
                   Отправить
                   <ArrowRight className="ml-2 size-4" />
                 </Button>

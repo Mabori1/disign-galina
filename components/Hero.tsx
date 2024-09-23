@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
       <div className="my-6 flex flex-wrap-reverse justify-between lg:my-20">
         <div className="flex max-w-md flex-col px-5">
-          <h2 className="mb-3 font-ledger text-[22px] md:text-[24px] lg:mt-7 lg:text-center lg:text-6xl">
+          <h2 className="mb-3 font-ledger text-[22px] md:text-[24px] lg:mt-7 lg:text-6xl">
             Обо Мне
           </h2>
           <p className="mb-5 font-jost text-sm lg:mb-11 lg:text-2xl">

@@ -65,10 +65,10 @@ const Page = () => {
                   Самый популярный
                 </div>
               )}
-              <h3 className="my-3 font-ledger text-sm font-bold lg:mb-5 lg:text-[25px]">
+              <h3 className="mt-3 font-ledger text-sm font-bold lg:mb-5 lg:text-[25px]">
                 {item.title}
               </h3>
-              <h2 className="mx-auto font-ledger text-sm font-bold lg:text-7xl">
+              <h2 className="mx-auto font-dm text-base font-bold lg:text-7xl">
                 {item.price}
               </h2>
               <p className="font-serif text-sm lg:text-4xl">
@@ -93,17 +93,17 @@ const Page = () => {
               </ul>
             </div>
 
-            <Link href="https://wa.me/79884892654">
+            <Link href="/contacts">
               <Button
                 className={cn(
-                  "mb-6 px-2 text-sm lg:px-8",
+                  "mb-6 rounded-full px-2 text-sm lg:px-8",
                   item.id === "2"
                     ? "bg-nightshade-blue hover:bg-golden-beige"
                     : "bg-golden-beige",
                 )}
               >
                 Заказать{" "}
-                <ArrowRight className="ml-1 size-4 lg:ml-3 lg:size-8" />
+                <ArrowRight className="ml-1 size-4 lg:ml-3 lg:size-5" />
               </Button>
             </Link>
           </div>

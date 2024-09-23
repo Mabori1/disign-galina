@@ -6,18 +6,27 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 const Footer = () => {
   const [isContacts, setIsContacts] = useState(false);
+  const [isPolicy, setIsPolicy] = useState(false);
 
   const pathname = usePathname();
 
   useEffect(() => {
     setIsContacts(pathname === "/contacts");
+    setIsPolicy(pathname === "/policy");
   }, [pathname]);
 
   return (
-    <section className="flex flex-col items-center bg-white py-5 lg:py-20">
+    <section
+      className={cn(
+        isPolicy
+          ? "hidden"
+          : "flex flex-col items-center bg-white py-5 lg:py-20",
+      )}
+    >
       {isContacts ? (
         <div className="mx-3 mb-10 flex size-full h-[130px] max-w-[80%] flex-col items-center justify-center gap-5 overflow-hidden rounded-[30px] text-center text-white md:h-[274px] lg:h-[350px] lg:max-w-[60%] lg:rounded-[70px]">
           <Image
@@ -28,24 +37,24 @@ const Footer = () => {
           />
         </div>
       ) : (
-        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[374px] lg:max-w-[60%]">
-          <h3 className="font-ledger text-4xl md:text-6xl">
+        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[350px] lg:max-w-[60%]">
+          <h3 className="font-ledger text-2xl md:text-6xl">
             Остались вопросы?
           </h3>
-          <p className="font-jost text-xl lg:text-2xl">
+          <p className="mx-4 mb-4 font-jost text-xl lg:mb-10 lg:text-2xl">
             Закажите обратный звонок и мы свяжемся с Вами
           </p>
 
           <Link href="/contacts" target="_blank">
-            <Button className="bg-golden-beige px-10">
-              Заказать <ArrowRight className="ml-3" />
+            <Button className="rounded-full bg-golden-beige px-10 lg:py-6">
+              Заказать <ArrowRight className="ml-3 size-5" />
             </Button>
           </Link>
         </div>
       )}
       <div className="flex flex-wrap justify-center gap-5 lg:gap-20">
         <div className="flex flex-col items-center">
-          <Link href="https://t.me/makfflury" target="_blank" className="px-5">
+          <Link href="/" className="px-5">
             <Image src="/logo.png" alt="logo" width={382} height={82} />
           </Link>
           <p className="mb-2 font-jost text-base lg:text-[22px]">
@@ -100,25 +109,27 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="flex flex-col gap-3 font-jost text-sm text-nightshade-blue lg:mt-5 lg:text-xl">
-          <p className="text-sm font-bold lg:mb-2 lg:text-xl">Контакты</p>
+        {!isContacts && (
+          <div className="flex flex-col gap-3 font-jost text-sm text-nightshade-blue lg:mt-5 lg:text-xl">
+            <p className="text-sm font-bold lg:mb-2 lg:text-xl">Контакты</p>
 
-          <span>г. Краснодар, проезд Дальний 11к1</span>
+            <span>г. Краснодар, проезд Дальний 11к1</span>
 
-          <Link
-            href={`mailto:ph.makflya@mail.ru`}
-            className="cursor-pointer hover:text-neutral-500"
-          >
-            <span>ph.makflya@mail.ru</span>
-          </Link>
+            <Link
+              href={`mailto:ph.makflya@mail.ru`}
+              className="cursor-pointer hover:text-neutral-500"
+            >
+              <span>ph.makflya@mail.ru</span>
+            </Link>
 
-          <Link
-            href={`tel:+79937692654`}
-            className="cursor-pointer hover:text-neutral-500"
-          >
-            <span>+7(993)769-26-54</span>
-          </Link>
-        </div>
+            <Link
+              href={`tel:+79937692654`}
+              className="cursor-pointer hover:text-neutral-500"
+            >
+              <span>+7(993)769-26-54</span>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
