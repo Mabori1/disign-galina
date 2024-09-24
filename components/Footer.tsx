@@ -41,7 +41,7 @@ const Footer = () => {
           <h3 className="font-ledger text-2xl md:text-6xl">
             Остались вопросы?
           </h3>
-          <p className="mx-4 mb-4 font-jost text-xl lg:mb-10 lg:text-2xl">
+          <p className="mx-4 mb-4 font-jost text-base lg:mb-10 lg:text-2xl">
             Закажите обратный звонок и мы свяжемся с Вами
           </p>
 

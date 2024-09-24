@@ -96,10 +96,10 @@ const Page = () => {
         </div>
       </div>
       <div className="mt-10 flex flex-col lg:mt-28">
-        <h1 className="mb-10 text-center font-ledger text-3xl lg:mb-24 lg:text-5xl">
+        <h1 className="mb-10 text-center font-ledger text-2xl lg:mb-24 lg:text-5xl">
           Оставьте заявку и мы с<br /> Вами свяжемся
         </h1>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap-reverse justify-center gap-8">
           <div className="flex flex-col gap-3 rounded-3xl bg-isabelline p-8">
             <div className="flex items-center">
               <Image
