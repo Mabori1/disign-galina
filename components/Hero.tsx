@@ -44,9 +44,9 @@ const Hero = () => {
             выбора с возможной альтернативой
           </p>
 
-          <Link href="https://wa.me/79884892654" className="mb-5 text-center">
-            <Button>
-              Заказать <ArrowRight className="ml-3" />
+          <Link href="/contacts" className="mb-5 text-center">
+            <Button className="rounded-full px-5 lg:px-8 lg:py-6">
+              Заказать <ArrowRight className="ml-3 size-5" />
             </Button>
           </Link>
         </div>

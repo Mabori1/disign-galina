@@ -24,28 +24,19 @@ const Footer = () => {
       className={cn(
         isPolicy
           ? "hidden"
-          : "flex flex-col items-center bg-white py-5 lg:py-20",
+          : "z-30 flex flex-col items-center bg-white py-5 lg:py-20",
       )}
     >
-      {isContacts ? (
-        <div className="mx-3 mb-10 flex size-full h-[130px] max-w-[80%] flex-col items-center justify-center gap-5 overflow-hidden rounded-[30px] text-center text-white md:h-[274px] lg:h-[350px] lg:max-w-[60%] lg:rounded-[70px]">
-          <Image
-            src="/map.jpg"
-            alt="карта местонахождения"
-            width={1199}
-            height={501}
-          />
-        </div>
-      ) : (
-        <div className="mx-3 mb-10 flex size-full h-[300px] max-w-[80%] flex-col items-center justify-center gap-5 rounded-[70px] bg-nightshade-blue text-center text-white lg:h-[350px] lg:max-w-[60%]">
-          <h3 className="font-ledger text-2xl md:text-6xl">
+      {!isContacts && (
+        <div className="mx-3 my-2 flex size-full h-[153px] max-w-[90%] flex-col items-center justify-center rounded-[40px] bg-nightshade-blue text-center text-white lg:my-6 lg:h-[300px] lg:max-w-[60%] lg:gap-5 lg:rounded-[70px]">
+          <h3 className="mb-1 font-ledger text-2xl md:text-6xl">
             Остались вопросы?
           </h3>
-          <p className="mx-4 mb-4 font-jost text-base lg:mb-10 lg:text-2xl">
+          <p className="mx-4 mb-6 font-jost text-xs lg:mb-10 lg:text-2xl">
             Закажите обратный звонок и мы свяжемся с Вами
           </p>
 
-          <Link href="/contacts" target="_blank">
+          <Link href="/contacts">
             <Button className="rounded-full bg-golden-beige px-10 lg:py-6">
               Заказать <ArrowRight className="ml-3 size-5" />
             </Button>

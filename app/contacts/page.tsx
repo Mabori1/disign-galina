@@ -242,7 +242,7 @@ const Page = () => {
                     </FormItem>
                   )}
                 />
-                <div className="md:max-w-[400px] lg:max-w-[624px]">
+                <div className="w-[300px] md:w-[624px]">
                   <Link href="/policy">
                     <p className="cursor-pointer text-xs underline lg:text-base">
                       Нажимая на кнопку, вы даете согласие на обработку

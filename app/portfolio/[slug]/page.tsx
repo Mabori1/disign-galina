@@ -20,10 +20,10 @@ const Page = ({ params }: { params: { slug: string } }) => {
         />
       </div>
       <div className="mx-auto mt-[23vw] flex flex-col justify-center">
-        <div className="mt-12 flex flex-wrap lg:mt-24">
+        <div className="mt-16 flex flex-wrap lg:mt-24">
           <Link
             href="/portfolio"
-            className="z-20 flex cursor-pointer items-center"
+            className="z-20 mb-5 ml-4 flex cursor-pointer items-center"
           >
             <ArrowLeft
               className="mr-1 size-3 lg:mr-2 lg:size-6"

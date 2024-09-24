@@ -54,7 +54,7 @@ const MyWork = () => {
         ))}
       </div>
 
-      <div className="flex size-full max-w-[1920px] items-center justify-center rounded-3xl bg-isabelline py-10 lg:mb-20 lg:min-h-[460px] lg:gap-10">
+      <div className="flex size-full max-w-[90%] items-center justify-center rounded-3xl bg-isabelline py-10 lg:mb-20 lg:min-h-[460px] lg:gap-10">
         <div className="flex flex-col items-center border-r border-r-golden-beige">
           <span className="text-4xl text-golden-beige lg:mx-20 lg:text-8xl">
             4+
