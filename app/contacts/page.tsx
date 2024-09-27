@@ -101,7 +101,10 @@ const Page = () => {
         </h1>
         <div className="flex flex-wrap-reverse justify-center gap-8">
           <div className="flex flex-col gap-3 rounded-3xl bg-isabelline p-8">
-            <div className="flex items-center">
+            <Link
+              href="mailto:ph.makflya@mail.ru"
+              className="flex items-center"
+            >
               <Image
                 src="/contacts-email.svg"
                 alt="иконка почты"
@@ -109,8 +112,8 @@ const Page = () => {
                 height={52}
               />
               <span className="ml-3 font-jost text-xl">ph.makflya@mail.ru</span>
-            </div>
-            <div className="flex items-center">
+            </Link>
+            <Link href="tel:+79337692554" className="flex items-center">
               <Image
                 src="/contacts-phone.svg"
                 alt="иконка телефона"
@@ -120,7 +123,7 @@ const Page = () => {
               <span className="ml-3 font-jost text-xl">
                 +7&nbsp;(933)&nbsp;769-25-54
               </span>
-            </div>
+            </Link>
             <div className="flex size-full items-center justify-center gap-4">
               <Link href="https://t.me/makfflury" target="_blank">
                 <Image

@@ -39,7 +39,7 @@ const jostFonts = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Disign Project",
+  title: "Студия дизайна Макеевой Галины",
   description: "Студия дизайна Галины Макеевой",
 };
 
