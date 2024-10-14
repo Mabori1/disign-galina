@@ -72,7 +72,7 @@ const Page = () => {
                 {item.price}
               </h2>
               <p className="font-serif text-sm lg:text-4xl">
-                м
+                руб/м
                 <sup>
                   <small>2</small>
                 </sup>
@@ -109,6 +109,10 @@ const Page = () => {
           </div>
         ))}
       </div>
+
+      <h3 className="mt-10 text-center font-ledger text-sm lg:text-3xl">
+        Скидка <span className="text-golden-beige">-5%</span> при заказе с сайта
+      </h3>
     </section>
   );
 };

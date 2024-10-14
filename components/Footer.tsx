@@ -24,7 +24,7 @@ const Footer = () => {
       className={cn(
         isPolicy
           ? "hidden"
-          : "z-30 flex flex-col items-center bg-white py-5 lg:py-20",
+          : "z-30 flex flex-col items-center bg-white py-5 lg:py-10",
       )}
     >
       {!isContacts && (
@@ -79,7 +79,7 @@ const Footer = () => {
             <Link href="mailto:ph.makflya@mail.ru">
               <Image
                 src="/mail.svg"
-                alt="иконка instagram"
+                alt="иконка почты"
                 width={40}
                 height={40}
               />
