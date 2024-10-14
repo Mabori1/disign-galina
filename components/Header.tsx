@@ -30,9 +30,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <div
-      className={`fixed left-0 top-0 z-10 w-full bg-white px-2 transition-transform duration-300 xl:px-4 ${showNavBar ? "translate-y-0" : "-translate-y-full"}`}
-    >
+    <div className={`fixed left-0 top-0 z-10 w-full bg-white px-2 xl:px-4`}>
       <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-6 lg:max-w-7xl">
         <div className="flex items-center justify-between py-3 md:block md:py-5">
           <div className="mr-4 flex w-[200px] shrink md:w-[250px] lg:w-[300px]">
