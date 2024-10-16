@@ -121,7 +121,7 @@ const Page = () => {
                 height={52}
               />
               <span className="ml-3 font-jost text-xl">
-                +7&nbsp;(933)&nbsp;769-25-54
+                +7&nbsp;(933)&nbsp;769-26-54
               </span>
             </Link>
             <div className="flex size-full items-center justify-center gap-4">
